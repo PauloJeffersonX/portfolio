@@ -1,15 +1,47 @@
-# Portfolio - Paulo Jefferson Silva
-Field Engineer / Técnico de Suporte TI
+# Portfólio — Paulo Jefferson Silva
+
+Portfólio profissional voltado para **Suporte de TI, Field Service, Infraestrutura, Linux e IA local**.
+
+## Tecnologias do site
+
+- HTML5
+- CSS3
+- JavaScript
+- Google Fonts
+- GitHub Pages
 
 ## Estrutura
-- `src/` — exemplos de código, scripts, automações
-- `docs/` — documentação técnica, relatórios, anotações
-- `skills/` — skills do Hermes usadas no projeto
-- `.vscope/` — configurações do VS Code do projeto
 
-## Como usar este projeto
-1. Abra no VS Code: `code .` dentro de `~/projects/portfolio`
-2. Cada pasta contém README próprio quando necessário
+```text
+portfolio/
+├── index.html
+├── styles.css
+├── script.js
+├── robots.txt
+├── sitemap.xml
+└── assets/
+    ├── aegis.png
+    ├── preview-aegis.png
+    └── curriculo-paulo-jefferson.pdf
+```
 
-## AEGIS Reference
-Arquivos e skills referentes à assistência da AEGIS ficam em `skills/`.
+## Publicação no GitHub Pages
+
+Este projeto foi preparado para o repositório:
+
+`PauloJeffersonX/portfolio`
+
+URL esperada:
+
+`https://paulojeffersonx.github.io/portfolio/`
+
+Em **Settings → Pages**:
+
+- Source: `Deploy from a branch`
+- Branch: `main`
+- Folder: `/ (root)`
+
+## Contato
+
+- LinkedIn: `linkedin.com/in/paulo-j-silva`
+- GitHub: `github.com/PauloJeffersonX`
