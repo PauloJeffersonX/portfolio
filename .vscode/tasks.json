@@ -3,17 +3,13 @@
   "tasks": [
     {
       "label": "AEGIS Hermes",
-      "type": "shell",
-      "command": "/home/paulojsilva/.hermes/hermes-agent/venv/bin/python",
+      "type": "process",
+      "command": "/home/paulojsilva/.local/bin/hermes",
       "args": [
-        "-m",
-        "hermes_cli.main"
+        "--cli"
       ],
       "options": {
-        "cwd": "${workspaceFolder}",
-        "shell": {
-          "executable": "/usr/bin/bash"
-        }
+        "cwd": "/home/paulojsilva/projects/portfolio"
       },
       "presentation": {
         "reveal": "always",
