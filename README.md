@@ -1,152 +1,98 @@
-# Paulo Jefferson — Portfólio Profissional
+# Portfólio — Paulo Jefferson Silva | V2.5.2 Preview
 
-Portfólio profissional voltado para **Suporte de TI, Field Service, Infraestrutura, Automação e laboratórios técnicos**, reunindo experiência profissional, projetos práticos e estudos aplicados.
+Portfólio profissional focado em **Suporte de TI, Field Service, Infraestrutura, Windows, Linux, redes, automação e IA local**.
 
-🌐 **Portfólio online:**  
-https://paulojeffersonx.github.io/portfolio/
+## Destaques
+- Private Cloud & Home Network — Ubuntu Server 24.04, Docker, Nextcloud, n8n, AdGuard Home/DNS, backup e monitoramento.
+- Windows Support Automation Platform — PowerShell, CIM/WMI, DISM, Winget e AI-Assisted Development.
+- AEGIS — ambiente pessoal de IA no Fedora.
+- Fedora Infrastructure Lab — workstation principal, Btrfs, rsync, recuperação, automação, Git/Python e labs.
+- Windows Workstation Engineering — troubleshooting, storage, GPT/UEFI, NTFS e Clonezilla.
+- Local AI Lab — Ollama/LLMs na workstation Ryzen 7 5700X + RX 6600.
+- Batocera Mini-ITX — build independente com N5095, 16 GB, M.2, SSD 480 GB, Bluetooth e dois joysticks.
 
----
+## Roadmap
+**Em desenvolvimento:** Sistema PDV e Corporate Active Directory Lab.
 
-## 👨‍💻 Sobre
+**Planejado/Futuro:** monitoramento de infraestrutura, Help Desk/ITSM, WireGuard, inventário automatizado, Disaster Recovery 3-2-1 e segmentação de rede/VLANs.
 
-Sou **Paulo Jefferson**, Tecnólogo em Análise e Desenvolvimento de Sistemas, com experiência prática em suporte técnico, atendimento em campo, troubleshooting, manutenção de hardware e software e infraestrutura de TI.
+## Publicação
+Repositório: `PauloJeffersonX/portfolio`
 
-Além da atuação profissional, mantenho um laboratório técnico próprio onde desenvolvo projetos envolvendo **Linux, Windows, redes, containers, automação e Inteligência Artificial executada localmente**.
+GitHub Pages: `https://paulojeffersonx.github.io/portfolio/`
 
----
+Em **Settings → Pages**, use `Deploy from a branch`, branch `main` e pasta `/ (root)`.
 
-## 🚀 Projetos em destaque
 
-### ☁️ Private Cloud & Home Infrastructure
+## Roadmap V2.5.2 Preview
+- Active Directory Lab como prioridade atual.
+- Trilha DevOps visual com Linux, Git/GitHub, Bash, Python, Docker, CI/CD, Cloud, Terraform, Kubernetes e Observability.
+- Sistema PDV reclassificado como projeto secundário em planejamento.
+- Balões/status visuais adicionados para facilitar leitura sem poluir o layout.
 
-Infraestrutura self-hosted baseada em **Ubuntu Server 24.04 LTS**, operando 24/7 em hardware dedicado.
 
-Principais tecnologias e recursos:
+## V2.5.2 Preview
+- Hero premium responsivo inspirado no conceito visual aprovado.
+- Terminal ampliado com mapa estilizado e localização.
+- Métricas principais e badges de tecnologias no topo.
+- Navbar em painel e melhor aproveitamento de telas widescreen.
 
-- Docker e Docker Compose
-- Portainer
-- Nextcloud
-- n8n
-- AdGuard Home / DNS local
-- Cockpit
-- OpenSSH
-- Bash + Cron
-- Backup automatizado
-- Monitoramento e hardening
+## Acessibilidade — V2.6
 
-Hardware dedicado baseado em **TN5095A / Intel N5095 / 16 GB DDR4**.
+Esta versão adiciona melhorias práticas alinhadas à WCAG 2.2: link “Pular para o conteúdo”, navegação integral por teclado, foco visível, estados ARIA no menu e seletor de tema, anúncio de troca de tema, regiões semânticas, status que não dependem apenas de cor, suporte a `prefers-reduced-motion`, melhorias para alto contraste e preservação de zoom/reflow responsivo.
 
----
+A acessibilidade deve continuar sendo validada em publicação com teclado e leitores de tela (por exemplo, NVDA/Orca), além de ferramentas automatizadas como Lighthouse/axe.
 
-### ⚙️ Windows Support Automation Platform
+## V2.6.2 — tooltips contextuais
 
-Ferramenta CLI desenvolvida em **PowerShell** para automatizar tarefas recorrentes de suporte, manutenção e diagnóstico de estações Windows.
+Foram adicionados balões explicativos acionados por mouse, foco de teclado e toque/foco em tecnologias do Hero, badges do terminal e etapas do roadmap DevOps. As descrições também são associadas aos elementos via `aria-describedby`, preservando a acessibilidade para leitores de tela.
 
-Inclui rotinas envolvendo:
 
-- verificação de privilégios administrativos;
-- DISM;
-- DNS e Winsock;
-- manutenção do sistema;
-- atualização de aplicações via Winget;
-- otimização de armazenamento;
-- inventário de hardware via CIM/WMI.
+## Atualização V2.6.2
+- AEGIS atualizado para 22 tools e 96 skills.
+- Private Cloud revisado com TN5095A, topologia DNS/AdGuard, storage, backup e stack self-hosted.
+- Batocera identificado como segunda máquina física TN5095A independente.
+- Tooltips contextuais expandidos para experiência, projetos, labs e roadmap, com foco por teclado.
 
-O desenvolvimento utiliza **AI-Assisted Development** como apoio para geração, revisão, refatoração e depuração, mantendo arquitetura, testes e homologação sob responsabilidade humana.
 
----
+## V2.6.4 — AEGIS + Local AI Lab
+- AEGIS atualizado para 22 tools e 96 skills.
+- Seção reposicionada como Personal AI Environment / Local AI Assistant, mantendo a transparência de que é baseada no Hermes Agent.
+- Fluxo resumido: Usuário → AEGIS → Tools + Skills → Fedora / Ollama.
+- Local AI Lab ampliado com foco em modelos, quantização, VRAM, inferência, integração e abordagem local-first.
+- Novos tooltips acessíveis por mouse, teclado e leitores de tela.
 
-### 🤖 AEGIS
 
-Ambiente pessoal de Inteligência Artificial integrado ao meu laboratório Fedora.
+## V2.6.5 — Hero compacto
+- Removido o terminal/caixa lateral da abertura.
+- Hero reorganizado em uma coluna com foco no nome, posicionamento e CTAs.
+- Redução de altura e espaçamentos para trazer métricas, citação e seção Sobre mais cedo na navegação.
+- Métricas e citação compactadas sem remover conteúdo.
+- Ajustes responsivos para desktop, tablet e celular.
 
-Baseado no **Hermes Agent**, com personalizações voltadas para experimentação técnica, automação e execução local de modelos.
 
-**22 Tools · 96 Skills**
+## V2.6.6 — Hero equilibrado + Sobre restaurado
+- Hero continua sem terminal/caixa grande.
+- Área direita ganhou um resumo editorial discreto de atuação atual.
+- Métricas e bloco de citação voltaram às proporções anteriores.
+- Espaçamento original da seção Sobre foi restaurado.
 
-Tecnologias:
 
-`Fedora` `Hermes Agent` `Ollama` `Python` `LLMs`
+## V2.6.7
+- Projetos & Labs convertidos em cards retangulares compactos e expansíveis.
+- Expansão por hover em desktop, clique/toque e foco de teclado.
+- Um projeto por vez para reduzir altura e poluição visual.
+- Textos do AEGIS refinados em Automação e Linux Workflow.
 
----
+## V2.6.8
+- Bloco de métricas abaixo do hero reduzido em altura e padding.
+- Citação compactada para melhorar a visualização na primeira tela.
+- Espaçamento até a seção Sobre ligeiramente reduzido sem alterar o conteúdo.
 
-## 🧪 Infrastructure & Labs
+## V2.6.9
+Roadmap convertido para linhas compactas e expansíveis, seguindo o mesmo padrão visual e de interação de Projetos & Labs. Funciona com hover no desktop, clique/toque e teclado.
 
-### Fedora Infrastructure Lab
 
-Fedora Linux como workstation principal e ambiente de administração, troubleshooting e experimentação.
-
-Experimentos e atividades envolvendo:
-
-`Btrfs` `rsync` `fstab` `Bash` `Git` `Python` `Docker`
-
-### Windows Workstation Engineering
-
-Laboratório para administração e troubleshooting de ambientes Windows, armazenamento, particionamento, recuperação e interoperabilidade com Linux.
-
-`Windows 11` `NTFS` `GPT/UEFI` `Clonezilla`
-
-### Local AI Lab
-
-Experimentação com modelos de linguagem executados localmente, incluindo análise de:
-
-- inferência;
-- quantização;
-- utilização de VRAM;
-- desempenho;
-- integração com ferramentas locais.
-
-**Workstation:** Ryzen 7 5700X · 32 GB DDR4 · Radeon RX 6600 8 GB
-
-### Retro Gaming System
-
-Build independente utilizando uma segunda plataforma **TN5095A / Intel N5095 / 16 GB DDR4**, dedicada ao Batocera.
-
-`Batocera` `TN5095A` `N5095` `16 GB` `SSD 480 GB`
-
----
-
-## 🛣️ Roadmap técnico
-
-Atualmente expandindo conhecimentos em:
-
-`Active Directory` → `Windows Server` → `Python` → `CI/CD` → `Cloud` → `Terraform` → `Kubernetes` → `Observability`
-
-Também fazem parte do roadmap laboratórios envolvendo **ITSM/GLPI, monitoramento de infraestrutura, WireGuard, inventário automatizado, Disaster Recovery e segmentação de redes**.
-
----
-
-## 🛠️ Tecnologias
-
-**Sistemas:** Windows · Linux · Fedora · Ubuntu Server  
-**Infraestrutura:** TCP/IP · LAN · DNS · SSH · Docker  
-**Automação:** PowerShell · Bash · Python  
-**Versionamento:** Git · GitHub  
-**IA Local:** Ollama · LLMs · AEGIS  
-**Virtualização & Storage:** Btrfs · NTFS · GPT/UEFI · Clonezilla
-
----
-
-## ♿ Acessibilidade
-
-O portfólio foi desenvolvido considerando práticas de acessibilidade, incluindo:
-
-- navegação por teclado;
-- foco visível;
-- descrições acessíveis para elementos interativos;
-- suporte a leitores de tela;
-- `prefers-reduced-motion`;
-- contraste entre conteúdo e interface;
-- layout responsivo.
-
-> As implementações seguem boas práticas alinhadas à WCAG 2.2, sem alegação de certificação formal.
-
----
-
-## 🌐 Publicação
-
-O projeto é publicado utilizando **GitHub Pages** diretamente pela branch `main`.
-
-```text
-Branch: main
-Directory: / (root)
+## V2.7.2
+- Assinatura visual de Paulo Jefferson adicionada ao fechamento da página.
+- AEGIS incluído no rodapé final como Personal AI Environment // Online.
