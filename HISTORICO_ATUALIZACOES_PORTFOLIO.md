@@ -343,6 +343,35 @@ O histórico é encerrado na **V2.7.3**, versão final escolhida como base.
   - Local AI Lab.
   - Rodapé compacto Paulo Jefferson // AEGIS.
 
+
+### AEGIS Game Mode / Easter Egg
+
+- Inclusão de um easter egg interativo sem alterar a proposta profissional do portfólio.
+- O **AEGIS Game Mode** fica escondido durante a navegação normal e pode ser desbloqueado de duas formas:
+  - 3 cliques rápidos em **AEGIS** no rodapé.
+  - Konami Code: `↑ ↑ ↓ ↓ ← → ← → B A`.
+- Inclusão de pistas discretas espalhadas pelo site para incentivar a descoberta do easter egg, sem entregar diretamente o segredo.
+- Entre as pistas usadas estão mensagens como:
+  - “Nem tudo aqui está à vista.”
+  - “Já pensou em dar um rolezinho por aqui?”
+  - “Alguns projetos têm segredos. Nem todos estão documentados.”
+  - “Dica antiga: certas sequências eram usadas antes mesmo de existir achievements.”
+  - “Se chegou até aqui, talvez já tenha passado perto de uma entrada escondida.”
+  - A sequência parcial `↑ ↑ ↓ ↓ ← → ← →` acompanhada da frase “Algumas sequências antigas ainda funcionam.”
+  - A pequena indicação `3x?` próxima ao AEGIS.
+- O Game Mode recebeu dois minigames executados diretamente no navegador e sem dependências externas:
+  - **Neon Breakout** — jogo arcade de rebater a bola e destruir os blocos.
+  - **Signal Dodge** — jogo de sobrevivência em que o jogador precisa desviar de obstáculos enquanto a dificuldade aumenta.
+- Inclusão de seletor para alternar entre os dois jogos.
+- Controles por teclado e botões para dispositivos móveis.
+- Suporte a:
+  - `←` / `→` ou `A` / `D` para movimentação.
+  - `Espaço` para pausar e continuar.
+  - `Esc` para fechar o Game Mode.
+- Interface integrada à identidade visual escura/ciano do portfólio.
+- HUD com **Score**, **Lives** e **Level**.
+- O recurso foi mantido como um detalhe opcional e escondido, preservando a experiência principal para recrutadores e visitantes que acessarem apenas o conteúdo profissional.
+
 ---
 
 # Estado final
@@ -358,7 +387,8 @@ A V2.7.3 foi escolhida como base final por oferecer o melhor equilíbrio entre:
 - acessibilidade;
 - destaque aos projetos;
 - navegação compacta;
-- apresentação técnica sem excesso visual.
+- apresentação técnica sem excesso visual;
+- easter egg interativo integrado sem tirar o foco profissional do site.
 
 O portfólio permanece preparado para publicação via **GitHub Pages**, utilizando a branch `main` e a raiz do repositório como fonte de deploy.
 
@@ -366,7 +396,7 @@ O portfólio permanece preparado para publicação via **GitHub Pages**, utiliza
 
 A **V2.7.3** é a versão que escolhi para fechar esta etapa do portfólio, mas o projeto não termina aqui.
 
-A ideia é continuar mexendo nele aos poucos, conforme eu for aprendendo coisas novas, colocando novos projetos em prática e ganhando mais experiência na área. Então é bem provável que apareçam novos labs, tecnologias, projetos e também ajustes no próprio visual do site.
+A ideia é continuar mexendo nele aos poucos, conforme eu for aprendendo coisas novas, colocando novos projetos em prática e ganhando mais experiência na área. Então é bem provável que apareçam novos labs, tecnologias, projetos, recursos interativos e também ajustes no próprio visual do site.
 
 Por enquanto, a V2.7.3 representa bem o momento atual do portfólio. As próximas mudanças entram quando realmente tiver algo novo que faça sentido mostrar.
 

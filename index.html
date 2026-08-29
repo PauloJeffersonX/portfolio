@@ -87,6 +87,11 @@
         <div class="signal-status"><i aria-hidden="true"></i><span>BUILDING • LEARNING • SOLVING</span></div>
       </aside>
 
+    
+        <p class="game-hint game-hint-hero" aria-label="Pista de easter egg">
+          <span aria-hidden="true">◈</span> Nem tudo aqui está à vista.
+        </p>
+
     </section>
 
     <section class="hero-metrics section reveal">
@@ -251,7 +256,11 @@
           <span class="case-no">BUILD // BATOCERA MINI-ITX</span>
           <h3>Retro Gaming System</h3>
           <p>Montagem e configuração de um sistema compacto dedicado a jogos e emulação com Batocera Linux, usando uma segunda placa <strong>TN5095A</strong> independente do servidor.</p>
-          <div class="case-result"><b>HARDWARE</b><span>TN5095A com Intel N5095, 16 GB DDR4, sistema em M.2, SSD de 480 GB, dois joysticks e adaptador Bluetooth USB.</span></div>
+          <div class="case-result"><b>HARDWARE</b><span>TN5095A com Intel N5095, 16 GB DDR4, sistema em M.2, SSD de 480 GB, dois joysticks e adaptador Bluetooth USB.</span>
+          <p class="game-hint game-hint-project">
+            <span aria-hidden="true">🎮</span> Já pensou em dar um rolezinho por aqui?
+          </p>
+</div>
           <div class="tag-row"><span tabindex="0" data-tooltip="Batocera Linux — Sistema dedicado a emulação e jogos retrô, configurado como console compacto.">Batocera</span><span>Linux</span><span tabindex="0" data-tooltip="TN5095A — Segunda placa física desta plataforma, independente da unidade usada no servidor Private Cloud.">TN5095A</span><span tabindex="0" data-tooltip="Mini-ITX — Formato compacto utilizado na montagem física do sistema.">Mini-ITX</span><span>Bluetooth</span><span tabindex="0" data-tooltip="Dual Joystick — Dois controles configurados para uso simultâneo no sistema Batocera.">Dual Joystick</span></div>
         </article>
       </div>
@@ -418,18 +427,85 @@
     </section>
   </main>
 
-  <footer class="portfolio-footer" aria-label="Rodapé">
+  
+    <div class="game-hint-wrap">
+      <p class="game-hint game-hint-footer">
+        <span aria-hidden="true">↑ ↑ ↓ ↓ ← → ← →</span>
+        <span class="game-hint-text">Algumas sequências antigas ainda funcionam.</span>
+      </p>
+    </div>
+
+<footer class="portfolio-footer" aria-label="Rodapé">
     <div class="footer-identity">
       <div class="footer-brandline" aria-label="Paulo Jefferson e AEGIS">
         <span class="footer-owner">© 2026 <strong>PAULO JEFFERSON</strong></span>
         <span class="footer-separator" aria-hidden="true">//</span>
-        <span class="footer-aegis"><span aria-hidden="true">◉</span> <strong>AEGIS</strong></span>
+        <span class="game-hint-aegis" aria-hidden="true">3x?</span>
+        <button class="footer-aegis game-easter-trigger" id="gameEasterTrigger" type="button"
+          aria-label="AEGIS. Easter egg disponível."
+          title="AEGIS // ?">
+          <span aria-hidden="true">◉</span> <strong>AEGIS</strong>
+        </button>
       </div>
       <span class="footer-tagline">SUPPORT • INFRA • AUTOMATION • LOCAL AI</span>
       <span class="footer-motto">Built for the field. Powered by curiosity.</span>
     </div>
     <p class="footer-a11y">Acessibilidade: navegação por teclado, foco visível, suporte a leitores de tela, contraste e redução de movimento.</p>
   </footer>
+
+
+  <section class="game-overlay" id="gameOverlay" hidden aria-labelledby="gameTitle" aria-modal="true" role="dialog">
+    <div class="game-shell" role="document">
+      <div class="game-topbar">
+        <div>
+          <span class="game-kicker">AEGIS // GAME MODE</span>
+          <h2 id="gameTitle">NEON BREAKOUT</h2>
+        </div>
+        <button class="game-close" id="gameClose" type="button" aria-label="Fechar Game Mode">×</button>
+      </div>
+
+      <div class="game-system" aria-label="Informações do Game Mode">
+        <span>SYSTEM <b>ONLINE</b></span>
+        <span>PLATFORM <b>BATOCERA LAB</b></span>
+        <span>MODE <b>LOCAL</b></span>
+      </div>
+
+      
+      <div class="game-selector" role="group" aria-label="Escolher minigame">
+        <button class="game-mode-choice is-active" id="gameChoiceBreakout" type="button" aria-pressed="true">BREAKOUT</button>
+        <button class="game-mode-choice" id="gameChoiceDodge" type="button" aria-pressed="false">DODGE</button>
+      </div>
+
+      <div class="game-stage-wrap">
+        <canvas id="aegisGame" class="game-canvas" width="720" height="420"
+          aria-label="Minigame Breakout. Use as setas esquerda e direita ou A e D para mover a plataforma."></canvas>
+
+        <div class="game-start-screen" id="gameStartScreen">
+          <span class="game-lock">◈ EASTER EGG UNLOCKED</span>
+          <p>Um pequeno extra escondido no portfólio.</p>
+          <button id="gameStart" class="game-primary" type="button">START</button>
+        </div>
+      </div>
+
+      <div class="game-hud">
+        <span>SCORE <b id="gameScore">0000</b></span>
+        <span>LIVES <b id="gameLives">3</b></span>
+        <span>LEVEL <b id="gameLevel">01</b></span>
+      </div>
+
+      <div class="game-controls" aria-label="Controles do jogo">
+        <button class="game-control" id="gameLeft" type="button" aria-label="Mover para esquerda">←</button>
+        <button class="game-control game-control-center" id="gamePause" type="button">PAUSE</button>
+        <button class="game-control" id="gameRight" type="button" aria-label="Mover para direita">→</button>
+      </div>
+
+      <p class="game-help">
+        Teclado: <kbd>←</kbd> <kbd>→</kbd> ou <kbd>A</kbd> <kbd>D</kbd> •
+        <kbd>Espaço</kbd> pausa • <kbd>Esc</kbd> fecha
+      </p>
+      <p class="game-secret">Dica: existe mais de uma forma de desbloquear o Game Mode.</p>
+    </div>
+  </section>
 
   <script src="script.js"></script>
 </body>

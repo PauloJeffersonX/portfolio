@@ -1,152 +1,274 @@
 # Paulo Jefferson — Portfólio Profissional
 
-Portfólio profissional voltado para **Suporte de TI, Field Service, Infraestrutura, Automação e laboratórios técnicos**, reunindo experiência profissional, projetos práticos e estudos aplicados.
+Portfólio profissional voltado para **Suporte de TI, Field Service, Infraestrutura, Automação e laboratórios técnicos**.
 
-🌐 **Portfólio online:**  
+Atuo com suporte presencial e troubleshooting em ambiente corporativo e mantenho laboratórios próprios para colocar em prática Linux, Windows, redes, automação, containers e IA local.
+
+**Versão atual do portfólio: V2.7.3**
+
+> O projeto continua em desenvolvimento e pode receber novos conteúdos, labs e melhorias conforme minha evolução profissional e técnica.
+
+## Portfólio online
+
+**GitHub Pages:**  
 https://paulojeffersonx.github.io/portfolio/
 
 ---
 
-## 👨‍💻 Sobre
+## Sobre
 
-Sou **Paulo Jefferson**, Tecnólogo em Análise e Desenvolvimento de Sistemas, com experiência prática em suporte técnico, atendimento em campo, troubleshooting, manutenção de hardware e software e infraestrutura de TI.
+Sou **Tecnólogo em Análise e Desenvolvimento de Sistemas** e atuo como **Técnico de Suporte de TI / Field Service**, prestando atendimento em campo no Rio de Janeiro.
 
-Além da atuação profissional, mantenho um laboratório técnico próprio onde desenvolvo projetos envolvendo **Linux, Windows, redes, containers, automação e Inteligência Artificial executada localmente**.
+Minha experiência envolve suporte N1/N2, diagnóstico de hardware e software, Windows e Linux, redes TCP/IP/LAN, PDVs, impressoras, periféricos, infraestrutura local e atendimento dentro de SLA.
+
+Além da rotina profissional, mantenho um ambiente próprio de estudos e testes. Uso esses laboratórios para aprender na prática, testar soluções, automatizar tarefas e documentar o que funciona.
 
 ---
 
-## 🚀 Projetos em destaque
+## Projetos em destaque
 
-### ☁️ Private Cloud & Home Infrastructure
+### Private Cloud & Home Infrastructure
 
-Infraestrutura self-hosted baseada em **Ubuntu Server 24.04 LTS**, operando 24/7 em hardware dedicado.
+Servidor físico dedicado para serviços self-hosted e estudos de infraestrutura.
 
-Principais tecnologias e recursos:
+**Hardware**
+- TN5095A
+- Intel N5095
+- 16 GB DDR4
+- M.2/NVMe para o sistema
+- SSD para dados e containers
+- HDD de 1 TB para backup
+- Operação 24/7
 
-- Docker e Docker Compose
+**Stack**
+- Ubuntu Server 24.04 LTS
+- Docker / Docker Compose
 - Portainer
 - Nextcloud
 - n8n
-- AdGuard Home / DNS local
+- AdGuard Home
 - Cockpit
 - OpenSSH
-- Bash + Cron
-- Backup automatizado
-- Monitoramento e hardening
+- Bash
+- Cron
 
-Hardware dedicado baseado em **TN5095A / Intel N5095 / 16 GB DDR4**.
+O laboratório inclui DNS local com AdGuard Home, administração remota, containers, armazenamento, monitoramento básico, atualizações de segurança e rotina automatizada de backup.
 
----
-
-### ⚙️ Windows Support Automation Platform
-
-Ferramenta CLI desenvolvida em **PowerShell** para automatizar tarefas recorrentes de suporte, manutenção e diagnóstico de estações Windows.
-
-Inclui rotinas envolvendo:
-
-- verificação de privilégios administrativos;
-- DISM;
-- DNS e Winsock;
-- manutenção do sistema;
-- atualização de aplicações via Winget;
-- otimização de armazenamento;
-- inventário de hardware via CIM/WMI.
-
-O desenvolvimento utiliza **AI-Assisted Development** como apoio para geração, revisão, refatoração e depuração, mantendo arquitetura, testes e homologação sob responsabilidade humana.
+O script de backup interrompe os containers de forma controlada, compacta os dados persistentes, envia a cópia para o HDD de backup, inicia novamente os serviços e aplica retenção dos arquivos antigos.
 
 ---
 
-### 🤖 AEGIS
+### Windows Support Automation Platform
 
-Ambiente pessoal de Inteligência Artificial integrado ao meu laboratório Fedora.
+Projeto em PowerShell criado para reunir tarefas recorrentes de suporte, manutenção e diagnóstico do Windows em uma única ferramenta CLI.
 
-Baseado no **Hermes Agent**, com personalizações voltadas para experimentação técnica, automação e execução local de modelos.
+A plataforma está organizada em módulos para:
 
-**22 Tools · 96 Skills**
+1. Verificação de privilégios administrativos
+2. DISM e integridade do Windows
+3. DNS e Winsock
+4. Limpeza e manutenção
+5. Atualização de aplicativos com Winget
+6. Otimização de armazenamento
+7. Inventário de hardware e sistema via CIM/WMI
 
-Tecnologias:
-
-`Fedora` `Hermes Agent` `Ollama` `Python` `LLMs`
+O desenvolvimento também utiliza **AI-Assisted Development** como apoio para geração, revisão, refatoração e depuração de código, mantendo a arquitetura, testes e validação sob minha responsabilidade.
 
 ---
 
-## 🧪 Infrastructure & Labs
+### AEGIS — Personal AI Environment
+
+Implementação e personalização de um ambiente de IA baseado no **Hermes Agent**, integrado ao meu fluxo diário no Fedora.
+
+**Estado atual**
+- 22 Tools
+- 96 Skills
+- Fedora
+- Python
+- Ollama
+- LLMs locais
+
+Fluxo conceitual:
+
+`Usuário → AEGIS → Tools + Skills → Fedora / Ollama`
+
+O projeto é usado para experimentação assistida por agente em fluxos e tarefas técnicas e como parte do meu laboratório diário em Linux.
+
+---
+
+## Infrastructure & Labs
 
 ### Fedora Infrastructure Lab
 
-Fedora Linux como workstation principal e ambiente de administração, troubleshooting e experimentação.
+Minha workstation principal também funciona como laboratório Linux.
 
-Experimentos e atividades envolvendo:
+Entre os estudos e situações práticas estão Btrfs, rsync, Bash, Git, permissões, montagem de discos, `fstab`, recuperação de ambiente e restauração seletiva de configurações.
 
-`Btrfs` `rsync` `fstab` `Bash` `Git` `Python` `Docker`
+Um dos casos documentados envolveu a recuperação de aproximadamente **98 GB de dados** após reinstalação do sistema.
 
 ### Windows Workstation Engineering
 
-Laboratório para administração e troubleshooting de ambientes Windows, armazenamento, particionamento, recuperação e interoperabilidade com Linux.
-
-`Windows 11` `NTFS` `GPT/UEFI` `Clonezilla`
+Laboratório voltado para administração e troubleshooting do Windows 11, armazenamento, NTFS, GPT/UEFI, Clonezilla, preparação de discos, recuperação e interoperabilidade Windows/Linux.
 
 ### Local AI Lab
 
-Experimentação com modelos de linguagem executados localmente, incluindo análise de:
+Ambiente para testes de modelos locais, quantização, consumo de VRAM, desempenho de inferência e integração com ferramentas.
 
-- inferência;
-- quantização;
-- utilização de VRAM;
-- desempenho;
-- integração com ferramentas locais.
-
-**Workstation:** Ryzen 7 5700X · 32 GB DDR4 · Radeon RX 6600 8 GB
+**Workstation**
+- AMD Ryzen 7 5700X
+- 32 GB DDR4
+- AMD Radeon RX 6600 8 GB
+- Fedora
+- Ollama
+- AEGIS
 
 ### Retro Gaming System
 
-Build independente utilizando uma segunda plataforma **TN5095A / Intel N5095 / 16 GB DDR4**, dedicada ao Batocera.
+Projeto independente utilizando uma segunda plataforma TN5095A.
 
-`Batocera` `TN5095A` `N5095` `16 GB` `SSD 480 GB`
+**Hardware / software**
+- Intel N5095
+- 16 GB DDR4
+- M.2 para o sistema
+- SSD de 480 GB
+- Batocera
+- Dois joysticks
+- Bluetooth USB
 
----
-
-## 🛣️ Roadmap técnico
-
-Atualmente expandindo conhecimentos em:
-
-`Active Directory` → `Windows Server` → `Python` → `CI/CD` → `Cloud` → `Terraform` → `Kubernetes` → `Observability`
-
-Também fazem parte do roadmap laboratórios envolvendo **ITSM/GLPI, monitoramento de infraestrutura, WireGuard, inventário automatizado, Disaster Recovery e segmentação de redes**.
-
----
-
-## 🛠️ Tecnologias
-
-**Sistemas:** Windows · Linux · Fedora · Ubuntu Server  
-**Infraestrutura:** TCP/IP · LAN · DNS · SSH · Docker  
-**Automação:** PowerShell · Bash · Python  
-**Versionamento:** Git · GitHub  
-**IA Local:** Ollama · LLMs · AEGIS  
-**Virtualização & Storage:** Btrfs · NTFS · GPT/UEFI · Clonezilla
+O objetivo foi montar uma máquina compacta dedicada à emulação e jogos retrô.
 
 ---
 
-## ♿ Acessibilidade
+## AEGIS Game Mode
 
-O portfólio foi desenvolvido considerando práticas de acessibilidade, incluindo:
+O portfólio também ganhou um pequeno **easter egg interativo**.
+
+A ideia foi adicionar algo mais pessoal ao projeto sem mudar a proposta profissional do site. Durante a navegação normal, o Game Mode fica escondido e pequenas pistas aparecem em diferentes partes da página.
+
+Existem duas formas de desbloqueá-lo:
+
+**3 cliques rápidos em `AEGIS` no rodapé**
+
+ou pelo clássico **Konami Code**:
+
+`↑ ↑ ↓ ↓ ← → ← → B A`
+
+### Neon Breakout
+
+Minigame arcade inspirado em Breakout. O objetivo é controlar a plataforma, rebater a bola e destruir os blocos.
+
+### Signal Dodge
+
+Minigame de sobrevivência. O jogador precisa desviar dos obstáculos enquanto a pontuação e a dificuldade aumentam.
+
+**Controles**
+
+`← →` ou `A D` — movimentação  
+`Espaço` — pausar / continuar  
+`Esc` — fechar o Game Mode
+
+Os dois jogos são executados diretamente no navegador, sem dependências externas, e seguem a identidade visual do portfólio.
+
+Além da parte divertida, o Game Mode funciona como uma pequena demonstração prática de interação com **HTML, CSS e JavaScript**.
+
+---
+
+## Roadmap técnico
+
+Minha trilha atual segue a evolução de **Suporte → Infraestrutura → Administração de Sistemas**, ampliando gradualmente para automação, cloud e DevOps.
+
+`Active Directory → Windows Server → Python → CI/CD → Cloud → Terraform → Kubernetes → Observability`
+
+Também fazem parte dos próximos estudos e projetos:
+
+- Active Directory / AD DS
+- Usuários, OUs, grupos e GPO
+- DNS e compartilhamentos
+- Permissões NTFS
+- Monitoramento com Grafana, Prometheus ou Zabbix
+- Help Desk / ITSM com GLPI
+- WireGuard
+- Inventário automatizado de TI
+- Disaster Recovery e estratégia 3-2-1
+- VLAN, DHCP, DNS e roteamento
+- CI/CD
+- Cloud
+- Terraform
+- Kubernetes
+
+---
+
+## Tecnologias e ferramentas
+
+**Sistemas:** Windows 11, Windows Server (roadmap), Fedora, Ubuntu Server  
+**Infraestrutura:** TCP/IP, LAN, DNS, DHCP, SSH, Btrfs, NTFS, GPT/UEFI  
+**Containers:** Docker, Docker Compose, Portainer  
+**Automação:** PowerShell, Bash, Cron, Python  
+**Versionamento:** Git, GitHub  
+**IA local:** Ollama, LLMs, AEGIS / Hermes Agent  
+**Self-hosted:** Nextcloud, n8n, AdGuard Home, Cockpit  
+**Suporte:** DISM, Winget, CIM/WMI, Clonezilla  
+**Web:** HTML, CSS e JavaScript
+
+---
+
+## Acessibilidade
+
+O portfólio possui melhorias práticas de acessibilidade, incluindo:
 
 - navegação por teclado;
-- foco visível;
-- descrições acessíveis para elementos interativos;
-- suporte a leitores de tela;
-- `prefers-reduced-motion`;
-- contraste entre conteúdo e interface;
-- layout responsivo.
+- estados de foco visíveis;
+- link para pular ao conteúdo principal;
+- atributos ARIA em componentes interativos;
+- suporte a `prefers-reduced-motion`;
+- melhorias para `forced-colors`;
+- contraste entre elementos;
+- estrutura semântica;
+- interação por clique, toque e teclado nos componentes expansíveis.
 
-> As implementações seguem boas práticas alinhadas à WCAG 2.2, sem alegação de certificação formal.
+O projeto busca seguir boas práticas alinhadas à **WCAG 2.2**, mas não é apresentado como formalmente certificado.
 
 ---
 
-## 🌐 Publicação
+## Publicação
 
-O projeto é publicado utilizando **GitHub Pages** diretamente pela branch `main`.
+O site é publicado através do **GitHub Pages**.
 
-```text
-Branch: main
-Directory: / (root)
+- Branch: `main`
+- Diretório de publicação: `/ (root)`
+- Deploy pelo GitHub Pages
+- Site estático em HTML, CSS e JavaScript
+
+---
+
+## Histórico de desenvolvimento
+
+O desenvolvimento do portfólio foi feito em várias etapas até chegar à **V2.7.3**, mantendo apenas as decisões visuais e funcionais aprovadas.
+
+O histórico detalhado das alterações está disponível no arquivo:
+
+`HISTORICO_ATUALIZACOES_PORTFOLIO.md`
+
+A V2.7.3 fecha esta etapa do projeto, mas o portfólio continua ativo. Novos projetos, experiências, laboratórios e recursos poderão ser adicionados conforme fizer sentido.
+
+---
+
+## Contato
+
+**Paulo Jefferson da Silva**  
+Rio de Janeiro — RJ
+
+**E-mail:** paulojefferson89@gmail.com  
+**LinkedIn:** https://www.linkedin.com/in/paulo-j-silva  
+**GitHub:** https://github.com/PauloJeffersonX
+
+---
+
+<p align="center">
+  <strong>PAULO JEFFERSON // AEGIS</strong><br>
+  Support • Infrastructure • Automation • Local AI
+</p>
+
+<p align="center">
+  <em>Built for the field. Powered by curiosity.</em>
+</p>

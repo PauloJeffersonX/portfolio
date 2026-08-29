@@ -196,3 +196,372 @@ document.querySelectorAll('[data-tooltip]').forEach((el, index) => {
     item.addEventListener('focusin', () => { closeOthers(item); setOpen(item, true); });
   });
 })();
+
+
+
+// =========================================================
+// V2.7.3 — AEGIS GAME MODE PLUS
+// Easter egg: 3 cliques em AEGIS OU Konami Code.
+// Dois minigames locais: Breakout + Dodge.
+// =========================================================
+(() => {
+  const overlay = document.getElementById('gameOverlay');
+  const trigger = document.getElementById('gameEasterTrigger');
+  const closeBtn = document.getElementById('gameClose');
+  const startScreen = document.getElementById('gameStartScreen');
+  const canvas = document.getElementById('aegisGame');
+  const scoreEl = document.getElementById('gameScore');
+  const livesEl = document.getElementById('gameLives');
+  const levelEl = document.getElementById('gameLevel');
+  const leftBtn = document.getElementById('gameLeft');
+  const rightBtn = document.getElementById('gameRight');
+  const pauseBtn = document.getElementById('gamePause');
+  const gameTitle = document.getElementById('gameTitle');
+  const choiceBreakout = document.getElementById('gameChoiceBreakout');
+  const choiceDodge = document.getElementById('gameChoiceDodge');
+
+  if (!overlay || !trigger || !canvas) return;
+
+  const ctx = canvas.getContext('2d');
+  let currentGame = 'breakout';
+  let lastFocus = null;
+  let easterClicks = 0;
+  let clickTimer = null;
+  let animationId = 0;
+  let running = false;
+  let paused = false;
+  let leftPressed = false;
+  let rightPressed = false;
+
+  let score = 0;
+  let lives = 3;
+  let level = 1;
+  let frame = 0;
+
+  const paddle = { x: 285, y: 384, w: 150, h: 12, speed: 8 };
+  const ball = { x: 360, y: 350, r: 7, dx: 4.1, dy: -4.1 };
+  let bricks = [];
+
+  const player = { x: 340, y: 355, w: 40, h: 40, speed: 7 };
+  let hazards = [];
+  let stars = [];
+
+  const accent = (getComputedStyle(document.documentElement).getPropertyValue('--accent') || '#65e8ff').trim();
+
+  function setChoice(game) {
+    currentGame = game;
+    choiceBreakout?.classList.toggle('is-active', game === 'breakout');
+    choiceDodge?.classList.toggle('is-active', game === 'dodge');
+    choiceBreakout?.setAttribute('aria-pressed', String(game === 'breakout'));
+    choiceDodge?.setAttribute('aria-pressed', String(game === 'dodge'));
+    gameTitle.textContent = game === 'breakout' ? 'NEON BREAKOUT' : 'SIGNAL DODGE';
+    stopGame();
+    resetGame();
+    renderStartScreen();
+  }
+
+  function stopGame() {
+    running = false;
+    paused = false;
+    cancelAnimationFrame(animationId);
+    pauseBtn.textContent = 'PAUSE';
+  }
+
+  function drawGrid() {
+    ctx.clearRect(0,0,canvas.width,canvas.height);
+    ctx.fillStyle = '#03090d';
+    ctx.fillRect(0,0,canvas.width,canvas.height);
+    ctx.strokeStyle = 'rgba(94,231,255,.055)';
+    ctx.lineWidth = 1;
+    for (let x=0;x<=canvas.width;x+=30){ctx.beginPath();ctx.moveTo(x,0);ctx.lineTo(x,canvas.height);ctx.stroke();}
+    for (let y=0;y<=canvas.height;y+=30){ctx.beginPath();ctx.moveTo(0,y);ctx.lineTo(canvas.width,y);ctx.stroke();}
+  }
+
+  function rr(x,y,w,h,r){
+    ctx.beginPath();
+    if (ctx.roundRect) ctx.roundRect(x,y,w,h,r);
+    else ctx.rect(x,y,w,h);
+  }
+
+  function updateHud() {
+    scoreEl.textContent = String(Math.max(0, Math.floor(score))).padStart(4,'0');
+    livesEl.textContent = String(lives);
+    levelEl.textContent = String(level).padStart(2,'0');
+  }
+
+  function renderStartScreen(message='Um pequeno extra escondido no portfólio.') {
+    startScreen.classList.remove('is-hidden');
+    startScreen.innerHTML = `
+      <span class="game-lock">◈ EASTER EGG UNLOCKED</span>
+      <p>${message}</p>
+      <button id="gameStartDynamic" class="game-primary" type="button">START ${currentGame === 'breakout' ? 'BREAKOUT' : 'DODGE'}</button>
+    `;
+    document.getElementById('gameStartDynamic')?.addEventListener('click', startGame, { once:true });
+  }
+
+  // ---------- BREAKOUT ----------
+  function makeBricks() {
+    bricks = [];
+    const cols=9, rows=4+Math.min(level-1,2), gap=8, side=34, top=52;
+    const bw=(canvas.width-side*2-gap*(cols-1))/cols, bh=18;
+    for(let r=0;r<rows;r++){
+      for(let c=0;c<cols;c++){
+        bricks.push({
+          x:side+c*(bw+gap), y:top+r*(bh+gap), w:bw, h:bh,
+          alive:true, strength:(r===0&&level>1)?2:1
+        });
+      }
+    }
+  }
+
+  function resetBall() {
+    paddle.x=(canvas.width-paddle.w)/2;
+    ball.x=canvas.width/2;
+    ball.y=paddle.y-18;
+    const speed=4.1+(level-1)*.35;
+    ball.dx=(Math.random()>.5?1:-1)*speed;
+    ball.dy=-speed;
+  }
+
+  function drawBreakout() {
+    drawGrid();
+    bricks.forEach((b,i)=>{
+      if(!b.alive)return;
+      ctx.fillStyle=b.strength>1?'rgba(255,255,255,.32)':`rgba(94,231,255,${.34+(i%9)/9*.34})`;
+      rr(b.x,b.y,b.w,b.h,4);ctx.fill();
+      ctx.strokeStyle='rgba(190,248,255,.36)';ctx.stroke();
+    });
+    ctx.fillStyle='#dffbff';rr(paddle.x,paddle.y,paddle.w,paddle.h,6);ctx.fill();
+    ctx.beginPath();ctx.arc(ball.x,ball.y,ball.r,0,Math.PI*2);ctx.fillStyle=accent;ctx.fill();
+  }
+
+  function collideBricks() {
+    for(const b of bricks){
+      if(!b.alive)continue;
+      if(ball.x+ball.r>b.x && ball.x-ball.r<b.x+b.w && ball.y+ball.r>b.y && ball.y-ball.r<b.y+b.h){
+        ball.dy*=-1;
+        b.strength--;
+        if(b.strength<=0){b.alive=false;score+=10*level;} else score+=5;
+        updateHud();return;
+      }
+    }
+    if(bricks.every(b=>!b.alive)){
+      level++;score+=100;makeBricks();resetBall();updateHud();
+    }
+  }
+
+  function updateBreakout() {
+    if(leftPressed)paddle.x-=paddle.speed;
+    if(rightPressed)paddle.x+=paddle.speed;
+    paddle.x=Math.max(0,Math.min(canvas.width-paddle.w,paddle.x));
+
+    ball.x+=ball.dx; ball.y+=ball.dy;
+    if(ball.x+ball.r>=canvas.width || ball.x-ball.r<=0)ball.dx*=-1;
+    if(ball.y-ball.r<=0)ball.dy*=-1;
+
+    if(ball.dy>0 && ball.y+ball.r>=paddle.y && ball.y-ball.r<=paddle.y+paddle.h &&
+       ball.x>=paddle.x && ball.x<=paddle.x+paddle.w){
+      const relative=(ball.x-(paddle.x+paddle.w/2))/(paddle.w/2);
+      ball.dx=relative*(5.8+level*.25);
+      ball.dy=-Math.abs(ball.dy);
+      ball.y=paddle.y-ball.r-1;
+    }
+
+    collideBricks();
+
+    if(ball.y-ball.r>canvas.height){
+      lives--;updateHud();
+      if(lives<=0){endGame();return;}
+      resetBall();
+    }
+  }
+
+  // ---------- DODGE ----------
+  function resetDodge() {
+    player.x=(canvas.width-player.w)/2;
+    player.y=canvas.height-player.h-24;
+    hazards=[];
+    stars=Array.from({length:40},()=>({
+      x:Math.random()*canvas.width,
+      y:Math.random()*canvas.height,
+      s:Math.random()*1.8+.4
+    }));
+    frame=0;
+  }
+
+  function spawnHazard() {
+    const w=24+Math.random()*42;
+    const speed=2.8+level*.45+Math.random()*1.7;
+    hazards.push({
+      x:Math.random()*(canvas.width-w),
+      y:-40,
+      w,h:18+Math.random()*30,
+      speed
+    });
+  }
+
+  function drawDodge() {
+    drawGrid();
+    ctx.fillStyle='rgba(255,255,255,.45)';
+    for(const s of stars){ctx.fillRect(s.x,s.y,s.s,s.s);}
+
+    for(const h of hazards){
+      ctx.fillStyle='rgba(255,100,120,.56)';
+      rr(h.x,h.y,h.w,h.h,5);ctx.fill();
+      ctx.strokeStyle='rgba(255,180,190,.45)';ctx.stroke();
+    }
+
+    ctx.fillStyle=accent;
+    rr(player.x,player.y,player.w,player.h,8);ctx.fill();
+    ctx.fillStyle='#031014';
+    ctx.fillRect(player.x+9,player.y+12,6,6);
+    ctx.fillRect(player.x+25,player.y+12,6,6);
+  }
+
+  function updateDodge() {
+    frame++;
+    if(leftPressed)player.x-=player.speed;
+    if(rightPressed)player.x+=player.speed;
+    player.x=Math.max(0,Math.min(canvas.width-player.w,player.x));
+
+    const spawnEvery=Math.max(20,58-level*4);
+    if(frame%spawnEvery===0)spawnHazard();
+
+    for(const h of hazards) h.y+=h.speed;
+    hazards=hazards.filter(h=>{
+      if(h.y>canvas.height+60){score+=5;return false;}
+      const hit=player.x<h.x+h.w && player.x+player.w>h.x && player.y<h.y+h.h && player.y+player.h>h.y;
+      if(hit){
+        lives--;
+        updateHud();
+        h.y=canvas.height+100;
+        if(lives<=0){endGame();return false;}
+      }
+      return true;
+    });
+
+    score += .08;
+    level = 1 + Math.floor(score / 120);
+    updateHud();
+  }
+
+  function resetGame() {
+    score=0;lives=3;level=1;frame=0;
+    leftPressed=rightPressed=false;
+    if(currentGame==='breakout'){makeBricks();resetBall();drawBreakout();}
+    else {resetDodge();drawDodge();}
+    updateHud();
+  }
+
+  function drawCurrent() {
+    if(currentGame==='breakout') drawBreakout();
+    else drawDodge();
+
+    if(paused && running){
+      ctx.fillStyle='rgba(3,9,13,.68)';
+      ctx.fillRect(0,0,canvas.width,canvas.height);
+      ctx.fillStyle='#e9fbff';
+      ctx.font='600 24px ui-monospace, monospace';
+      ctx.textAlign='center';
+      ctx.fillText('PAUSED',canvas.width/2,canvas.height/2);
+    }
+  }
+
+  function endGame() {
+    stopGame();
+    renderStartScreen(`Run finalizada • Score: <strong>${String(Math.floor(score)).padStart(4,'0')}</strong>`);
+  }
+
+  function loop() {
+    if(!running)return;
+    if(!paused){
+      if(currentGame==='breakout') updateBreakout();
+      else updateDodge();
+    }
+    drawCurrent();
+    if(running) animationId=requestAnimationFrame(loop);
+  }
+
+  function startGame() {
+    stopGame();
+    resetGame();
+    startScreen.classList.add('is-hidden');
+    running=true;paused=false;pauseBtn.textContent='PAUSE';
+    animationId=requestAnimationFrame(loop);
+  }
+
+  function togglePause() {
+    if(!running)return;
+    paused=!paused;
+    pauseBtn.textContent=paused?'RESUME':'PAUSE';
+    drawCurrent();
+  }
+
+  function openGame() {
+    lastFocus=document.activeElement;
+    overlay.hidden=false;
+    document.body.classList.add('game-mode-open');
+    resetGame();
+    renderStartScreen();
+    closeBtn.focus();
+  }
+
+  function closeGame() {
+    stopGame();
+    overlay.hidden=true;
+    document.body.classList.remove('game-mode-open');
+    leftPressed=rightPressed=false;
+    if(lastFocus && typeof lastFocus.focus==='function')lastFocus.focus();
+  }
+
+  choiceBreakout?.addEventListener('click',()=>setChoice('breakout'));
+  choiceDodge?.addEventListener('click',()=>setChoice('dodge'));
+  closeBtn.addEventListener('click',closeGame);
+  pauseBtn.addEventListener('click',togglePause);
+
+  trigger.addEventListener('click',()=>{
+    easterClicks++;
+    clearTimeout(clickTimer);
+    clickTimer=setTimeout(()=>{easterClicks=0;},1400);
+    if(easterClicks>=3){easterClicks=0;openGame();}
+  });
+
+  overlay.addEventListener('click',e=>{if(e.target===overlay)closeGame();});
+
+  function keyState(e,down){
+    if(e.key==='ArrowLeft'||e.key.toLowerCase()==='a'){leftPressed=down;if(!overlay.hidden)e.preventDefault();}
+    if(e.key==='ArrowRight'||e.key.toLowerCase()==='d'){rightPressed=down;if(!overlay.hidden)e.preventDefault();}
+  }
+
+  document.addEventListener('keydown',e=>{
+    keyState(e,true);
+    if(!overlay.hidden && e.key===' '){e.preventDefault();togglePause();}
+    if(!overlay.hidden && e.key==='Escape')closeGame();
+  });
+  document.addEventListener('keyup',e=>keyState(e,false));
+
+  const bindHold=(button,setter)=>{
+    if(!button)return;
+    const on=e=>{e.preventDefault();setter(true);};
+    const off=e=>{e.preventDefault();setter(false);};
+    button.addEventListener('pointerdown',on);
+    button.addEventListener('pointerup',off);
+    button.addEventListener('pointercancel',off);
+    button.addEventListener('pointerleave',off);
+  };
+  bindHold(leftBtn,v=>leftPressed=v);
+  bindHold(rightBtn,v=>rightPressed=v);
+
+  const konami=['ArrowUp','ArrowUp','ArrowDown','ArrowDown','ArrowLeft','ArrowRight','ArrowLeft','ArrowRight','b','a'];
+  let konamiIndex=0;
+  document.addEventListener('keydown',e=>{
+    if(!overlay.hidden)return;
+    const key=e.key.length===1?e.key.toLowerCase():e.key;
+    if(key===konami[konamiIndex]){
+      konamiIndex++;
+      if(konamiIndex===konami.length){konamiIndex=0;openGame();}
+    } else konamiIndex=key===konami[0]?1:0;
+  });
+
+  resetGame();
+})();
