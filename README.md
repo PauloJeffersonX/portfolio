@@ -1,274 +1,123 @@
-# Paulo Jefferson — Portfólio Profissional
+# Portfólio — Paulo Jefferson Silva | V2.5.2 Preview
 
-Portfólio profissional voltado para **Suporte de TI, Field Service, Infraestrutura, Automação e laboratórios técnicos**.
+Portfólio profissional focado em **Suporte de TI, Field Service, Infraestrutura, Windows, Linux, redes, automação e IA local**.
 
-Atuo com suporte presencial e troubleshooting em ambiente corporativo e mantenho laboratórios próprios para colocar em prática Linux, Windows, redes, automação, containers e IA local.
+## Destaques
+- Private Cloud & Home Network — Ubuntu Server 24.04, Docker, Nextcloud, n8n, AdGuard Home/DNS, backup e monitoramento.
+- Windows Support Automation Platform — PowerShell, CIM/WMI, DISM, Winget e AI-Assisted Development.
+- AEGIS — ambiente pessoal de IA no Fedora.
+- Fedora Infrastructure Lab — workstation principal, Btrfs, rsync, recuperação, automação, Git/Python e labs.
+- Windows Workstation Engineering — troubleshooting, storage, GPT/UEFI, NTFS e Clonezilla.
+- Local AI Lab — Ollama/LLMs na workstation Ryzen 7 5700X + RX 6600.
+- Batocera Mini-ITX — build independente com N5095, 16 GB, M.2, SSD 480 GB, Bluetooth e dois joysticks.
 
-**Versão atual do portfólio: V2.7.3**
+## Roadmap
+**Em desenvolvimento:** Sistema PDV e Corporate Active Directory Lab.
 
-> O projeto continua em desenvolvimento e pode receber novos conteúdos, labs e melhorias conforme minha evolução profissional e técnica.
+**Planejado/Futuro:** monitoramento de infraestrutura, Help Desk/ITSM, WireGuard, inventário automatizado, Disaster Recovery 3-2-1 e segmentação de rede/VLANs.
 
-## Portfólio online
+## Publicação
+Repositório: `PauloJeffersonX/portfolio`
 
-**GitHub Pages:**  
-https://paulojeffersonx.github.io/portfolio/
+GitHub Pages: `https://paulojeffersonx.github.io/portfolio/`
 
----
+Em **Settings → Pages**, use `Deploy from a branch`, branch `main` e pasta `/ (root)`.
 
-## Sobre
 
-Sou **Tecnólogo em Análise e Desenvolvimento de Sistemas** e atuo como **Técnico de Suporte de TI / Field Service**, prestando atendimento em campo no Rio de Janeiro.
+## Roadmap V2.5.2 Preview
+- Active Directory Lab como prioridade atual.
+- Trilha DevOps visual com Linux, Git/GitHub, Bash, Python, Docker, CI/CD, Cloud, Terraform, Kubernetes e Observability.
+- Sistema PDV reclassificado como projeto secundário em planejamento.
+- Balões/status visuais adicionados para facilitar leitura sem poluir o layout.
 
-Minha experiência envolve suporte N1/N2, diagnóstico de hardware e software, Windows e Linux, redes TCP/IP/LAN, PDVs, impressoras, periféricos, infraestrutura local e atendimento dentro de SLA.
 
-Além da rotina profissional, mantenho um ambiente próprio de estudos e testes. Uso esses laboratórios para aprender na prática, testar soluções, automatizar tarefas e documentar o que funciona.
+## V2.5.2 Preview
+- Hero premium responsivo inspirado no conceito visual aprovado.
+- Terminal ampliado com mapa estilizado e localização.
+- Métricas principais e badges de tecnologias no topo.
+- Navbar em painel e melhor aproveitamento de telas widescreen.
 
----
+## Acessibilidade — V2.6
 
-## Projetos em destaque
+Esta versão adiciona melhorias práticas alinhadas à WCAG 2.2: link “Pular para o conteúdo”, navegação integral por teclado, foco visível, estados ARIA no menu e seletor de tema, anúncio de troca de tema, regiões semânticas, status que não dependem apenas de cor, suporte a `prefers-reduced-motion`, melhorias para alto contraste e preservação de zoom/reflow responsivo.
 
-### Private Cloud & Home Infrastructure
+A acessibilidade deve continuar sendo validada em publicação com teclado e leitores de tela (por exemplo, NVDA/Orca), além de ferramentas automatizadas como Lighthouse/axe.
 
-Servidor físico dedicado para serviços self-hosted e estudos de infraestrutura.
+## V2.6.2 — tooltips contextuais
 
-**Hardware**
-- TN5095A
-- Intel N5095
-- 16 GB DDR4
-- M.2/NVMe para o sistema
-- SSD para dados e containers
-- HDD de 1 TB para backup
-- Operação 24/7
+Foram adicionados balões explicativos acionados por mouse, foco de teclado e toque/foco em tecnologias do Hero, badges do terminal e etapas do roadmap DevOps. As descrições também são associadas aos elementos via `aria-describedby`, preservando a acessibilidade para leitores de tela.
 
-**Stack**
-- Ubuntu Server 24.04 LTS
-- Docker / Docker Compose
-- Portainer
-- Nextcloud
-- n8n
-- AdGuard Home
-- Cockpit
-- OpenSSH
-- Bash
-- Cron
 
-O laboratório inclui DNS local com AdGuard Home, administração remota, containers, armazenamento, monitoramento básico, atualizações de segurança e rotina automatizada de backup.
+## Atualização V2.6.2
+- AEGIS atualizado para 22 tools e 96 skills.
+- Private Cloud revisado com TN5095A, topologia DNS/AdGuard, storage, backup e stack self-hosted.
+- Batocera identificado como segunda máquina física TN5095A independente.
+- Tooltips contextuais expandidos para experiência, projetos, labs e roadmap, com foco por teclado.
 
-O script de backup interrompe os containers de forma controlada, compacta os dados persistentes, envia a cópia para o HDD de backup, inicia novamente os serviços e aplica retenção dos arquivos antigos.
 
----
+## V2.6.4 — AEGIS + Local AI Lab
+- AEGIS atualizado para 22 tools e 96 skills.
+- Seção reposicionada como Personal AI Environment / Local AI Assistant, mantendo a transparência de que é baseada no Hermes Agent.
+- Fluxo resumido: Usuário → AEGIS → Tools + Skills → Fedora / Ollama.
+- Local AI Lab ampliado com foco em modelos, quantização, VRAM, inferência, integração e abordagem local-first.
+- Novos tooltips acessíveis por mouse, teclado e leitores de tela.
 
-### Windows Support Automation Platform
 
-Projeto em PowerShell criado para reunir tarefas recorrentes de suporte, manutenção e diagnóstico do Windows em uma única ferramenta CLI.
+## V2.6.5 — Hero compacto
+- Removido o terminal/caixa lateral da abertura.
+- Hero reorganizado em uma coluna com foco no nome, posicionamento e CTAs.
+- Redução de altura e espaçamentos para trazer métricas, citação e seção Sobre mais cedo na navegação.
+- Métricas e citação compactadas sem remover conteúdo.
+- Ajustes responsivos para desktop, tablet e celular.
 
-A plataforma está organizada em módulos para:
 
-1. Verificação de privilégios administrativos
-2. DISM e integridade do Windows
-3. DNS e Winsock
-4. Limpeza e manutenção
-5. Atualização de aplicativos com Winget
-6. Otimização de armazenamento
-7. Inventário de hardware e sistema via CIM/WMI
+## V2.6.6 — Hero equilibrado + Sobre restaurado
+- Hero continua sem terminal/caixa grande.
+- Área direita ganhou um resumo editorial discreto de atuação atual.
+- Métricas e bloco de citação voltaram às proporções anteriores.
+- Espaçamento original da seção Sobre foi restaurado.
 
-O desenvolvimento também utiliza **AI-Assisted Development** como apoio para geração, revisão, refatoração e depuração de código, mantendo a arquitetura, testes e validação sob minha responsabilidade.
 
----
+## V2.6.7
+- Projetos & Labs convertidos em cards retangulares compactos e expansíveis.
+- Expansão por hover em desktop, clique/toque e foco de teclado.
+- Um projeto por vez para reduzir altura e poluição visual.
+- Textos do AEGIS refinados em Automação e Linux Workflow.
 
-### AEGIS — Personal AI Environment
+## V2.6.8
+- Bloco de métricas abaixo do hero reduzido em altura e padding.
+- Citação compactada para melhorar a visualização na primeira tela.
+- Espaçamento até a seção Sobre ligeiramente reduzido sem alterar o conteúdo.
 
-Implementação e personalização de um ambiente de IA baseado no **Hermes Agent**, integrado ao meu fluxo diário no Fedora.
+## V2.6.9
+Roadmap convertido para linhas compactas e expansíveis, seguindo o mesmo padrão visual e de interação de Projetos & Labs. Funciona com hover no desktop, clique/toque e teclado.
 
-**Estado atual**
-- 22 Tools
-- 96 Skills
-- Fedora
-- Python
-- Ollama
-- LLMs locais
 
-Fluxo conceitual:
+## V2.7.2
+- Assinatura visual de Paulo Jefferson adicionada ao fechamento da página.
+- AEGIS incluído no rodapé final como Personal AI Environment // Online.
 
-`Usuário → AEGIS → Tools + Skills → Fedora / Ollama`
+## Easter Egg — AEGIS Game Mode
 
-O projeto é usado para experimentação assistida por agente em fluxos e tarefas técnicas e como parte do meu laboratório diário em Linux.
+A V2.7.3 também possui um pequeno easter egg: o **AEGIS Game Mode**, com um minigame Breakout executado diretamente no navegador e sem dependências externas.
 
----
-
-## Infrastructure & Labs
-
-### Fedora Infrastructure Lab
-
-Minha workstation principal também funciona como laboratório Linux.
-
-Entre os estudos e situações práticas estão Btrfs, rsync, Bash, Git, permissões, montagem de discos, `fstab`, recuperação de ambiente e restauração seletiva de configurações.
-
-Um dos casos documentados envolveu a recuperação de aproximadamente **98 GB de dados** após reinstalação do sistema.
-
-### Windows Workstation Engineering
-
-Laboratório voltado para administração e troubleshooting do Windows 11, armazenamento, NTFS, GPT/UEFI, Clonezilla, preparação de discos, recuperação e interoperabilidade Windows/Linux.
-
-### Local AI Lab
-
-Ambiente para testes de modelos locais, quantização, consumo de VRAM, desempenho de inferência e integração com ferramentas.
-
-**Workstation**
-- AMD Ryzen 7 5700X
-- 32 GB DDR4
-- AMD Radeon RX 6600 8 GB
-- Fedora
-- Ollama
-- AEGIS
-
-### Retro Gaming System
-
-Projeto independente utilizando uma segunda plataforma TN5095A.
-
-**Hardware / software**
-- Intel N5095
-- 16 GB DDR4
-- M.2 para o sistema
-- SSD de 480 GB
-- Batocera
-- Dois joysticks
-- Bluetooth USB
-
-O objetivo foi montar uma máquina compacta dedicada à emulação e jogos retrô.
-
----
-
-## AEGIS Game Mode
-
-O portfólio também ganhou um pequeno **easter egg interativo**.
-
-A ideia foi adicionar algo mais pessoal ao projeto sem mudar a proposta profissional do site. Durante a navegação normal, o Game Mode fica escondido e pequenas pistas aparecem em diferentes partes da página.
-
-Existem duas formas de desbloqueá-lo:
-
-**3 cliques rápidos em `AEGIS` no rodapé**
-
-ou pelo clássico **Konami Code**:
+Ele pode ser desbloqueado com **3 cliques em AEGIS no rodapé** ou pelo clássico **Konami Code**:
 
 `↑ ↑ ↓ ↓ ← → ← → B A`
 
-### Neon Breakout
+O recurso é opcional e fica escondido durante a navegação normal, preservando o foco profissional do portfólio.
 
-Minigame arcade inspirado em Breakout. O objetivo é controlar a plataforma, rebater a bola e destruir os blocos.
 
-### Signal Dodge
+### Pistas do easter egg
 
-Minigame de sobrevivência. O jogador precisa desviar dos obstáculos enquanto a pontuação e a dificuldade aumentam.
+O site possui pequenas pistas espalhadas pela navegação. Elas não interferem no conteúdo profissional e servem apenas para sugerir que existe algo escondido no portfólio.
 
-**Controles**
 
-`← →` ou `A D` — movimentação  
-`Espaço` — pausar / continuar  
-`Esc` — fechar o Game Mode
+### Game Mode Plus
 
-Os dois jogos são executados diretamente no navegador, sem dependências externas, e seguem a identidade visual do portfólio.
+O easter egg agora possui dois minigames locais:
 
-Além da parte divertida, o Game Mode funciona como uma pequena demonstração prática de interação com **HTML, CSS e JavaScript**.
+- **Neon Breakout** — versão arcade inspirada em Breakout.
+- **Signal Dodge** — desvie dos blocos e sobreviva o máximo possível.
 
----
-
-## Roadmap técnico
-
-Minha trilha atual segue a evolução de **Suporte → Infraestrutura → Administração de Sistemas**, ampliando gradualmente para automação, cloud e DevOps.
-
-`Active Directory → Windows Server → Python → CI/CD → Cloud → Terraform → Kubernetes → Observability`
-
-Também fazem parte dos próximos estudos e projetos:
-
-- Active Directory / AD DS
-- Usuários, OUs, grupos e GPO
-- DNS e compartilhamentos
-- Permissões NTFS
-- Monitoramento com Grafana, Prometheus ou Zabbix
-- Help Desk / ITSM com GLPI
-- WireGuard
-- Inventário automatizado de TI
-- Disaster Recovery e estratégia 3-2-1
-- VLAN, DHCP, DNS e roteamento
-- CI/CD
-- Cloud
-- Terraform
-- Kubernetes
-
----
-
-## Tecnologias e ferramentas
-
-**Sistemas:** Windows 11, Windows Server (roadmap), Fedora, Ubuntu Server  
-**Infraestrutura:** TCP/IP, LAN, DNS, DHCP, SSH, Btrfs, NTFS, GPT/UEFI  
-**Containers:** Docker, Docker Compose, Portainer  
-**Automação:** PowerShell, Bash, Cron, Python  
-**Versionamento:** Git, GitHub  
-**IA local:** Ollama, LLMs, AEGIS / Hermes Agent  
-**Self-hosted:** Nextcloud, n8n, AdGuard Home, Cockpit  
-**Suporte:** DISM, Winget, CIM/WMI, Clonezilla  
-**Web:** HTML, CSS e JavaScript
-
----
-
-## Acessibilidade
-
-O portfólio possui melhorias práticas de acessibilidade, incluindo:
-
-- navegação por teclado;
-- estados de foco visíveis;
-- link para pular ao conteúdo principal;
-- atributos ARIA em componentes interativos;
-- suporte a `prefers-reduced-motion`;
-- melhorias para `forced-colors`;
-- contraste entre elementos;
-- estrutura semântica;
-- interação por clique, toque e teclado nos componentes expansíveis.
-
-O projeto busca seguir boas práticas alinhadas à **WCAG 2.2**, mas não é apresentado como formalmente certificado.
-
----
-
-## Publicação
-
-O site é publicado através do **GitHub Pages**.
-
-- Branch: `main`
-- Diretório de publicação: `/ (root)`
-- Deploy pelo GitHub Pages
-- Site estático em HTML, CSS e JavaScript
-
----
-
-## Histórico de desenvolvimento
-
-O desenvolvimento do portfólio foi feito em várias etapas até chegar à **V2.7.3**, mantendo apenas as decisões visuais e funcionais aprovadas.
-
-O histórico detalhado das alterações está disponível no arquivo:
-
-`HISTORICO_ATUALIZACOES_PORTFOLIO.md`
-
-A V2.7.3 fecha esta etapa do projeto, mas o portfólio continua ativo. Novos projetos, experiências, laboratórios e recursos poderão ser adicionados conforme fizer sentido.
-
----
-
-## Contato
-
-**Paulo Jefferson da Silva**  
-Rio de Janeiro — RJ
-
-**E-mail:** paulojefferson89@gmail.com  
-**LinkedIn:** https://www.linkedin.com/in/paulo-j-silva  
-**GitHub:** https://github.com/PauloJeffersonX
-
----
-
-<p align="center">
-  <strong>PAULO JEFFERSON // AEGIS</strong><br>
-  Support • Infrastructure • Automation • Local AI
-</p>
-
-<p align="center">
-  <em>Built for the field. Powered by curiosity.</em>
-</p>
+Também foram adicionadas novas pistas discretas ao longo do site para incentivar a descoberta do Game Mode sem entregar o segredo logo de cara.

@@ -344,6 +344,12 @@ O histórico é encerrado na **V2.7.3**, versão final escolhida como base.
   - Rodapé compacto Paulo Jefferson // AEGIS.
 
 
+### Refinamento do conteúdo profissional
+
+- Seção **Sobre** reescrita para apresentar melhor a trajetória profissional, experiência prática e evolução para Infraestrutura e Administração de Sistemas.
+- Título atualizado para **“Experiência prática. Evolução contínua.”**
+- Inclusão da evolução entre suporte, laboratórios de infraestrutura, automação, IA local e roadmap técnico, sem transformar a seção em uma lista de tecnologias.
+
 ### AEGIS Game Mode / Easter Egg
 
 - Inclusão de um easter egg interativo sem alterar a proposta profissional do portfólio.
@@ -402,3 +408,22 @@ Por enquanto, a V2.7.3 representa bem o momento atual do portfólio. As próxima
 
 **Status:** projeto ativo e em evolução.
 
+
+### Refinamento profissional e mobile — V2.7.3
+
+- Substituição do indicador **PJ / MEI** por **INFRA**, priorizando competência técnica na apresentação inicial.
+- Novo indicador: **INFRA — Infraestrutura de TI — Windows • Linux • Redes**.
+- Correção do bloco de citação em telas pequenas, evitando quebra excessiva de palavras e sobreposição entre frase, assinatura e complemento.
+- Desktop preservado; ajuste direcionado ao breakpoint mobile.
+- Mantidos AEGIS Game Mode, Neon Breakout, Signal Dodge e demais recursos da V2.7.3.
+
+
+### Priorização dos indicadores profissionais — V2.7.3
+
+- Reorganização dos cinco indicadores do hero por prioridade profissional: **Experiência → Suporte → Infraestrutura → Automação → IA Local**.
+- Remoção da redundância entre os antigos indicadores **INFRA** e **LAB**.
+- **880+** passa a destacar experiência prática em suporte técnico e Field Service.
+- **SUPORTE** destaca N1/N2, Windows, hardware e redes.
+- **INFRA** concentra laboratório prático com Linux, Docker e Homelab.
+- **AUTOMAÇÃO** destaca Bash, PowerShell, Python, rotinas e produtividade.
+- **IA LOCAL** permanece como diferencial técnico com AEGIS, Ollama e LLMs.
