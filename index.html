@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Portfólio profissional de Paulo Jefferson: Suporte de TI N1/N2, atendimento em campo, Field Service, infraestrutura, Windows, Linux, redes e laboratório de IA local." />
+  <meta name="description" content="Portfólio profissional de Paulo Jefferson: Suporte de TI N1/N2, atendimento em campo, Field Service, infraestrutura, Windows, Linux, redes, automação, homelab, Docker e laboratório de IA local." />
   <meta name="author" content="Paulo Jefferson da Silva" />
   <meta name="robots" content="index, follow" />
   <meta name="theme-color" content="#050709" />
@@ -12,7 +12,7 @@
   <meta property="og:type" content="website" />
   <meta property="og:locale" content="pt_BR" />
   <meta property="og:title" content="Paulo Jefferson | Suporte de TI • Field Service • Infraestrutura" />
-  <meta property="og:description" content="Experiência prática em suporte técnico, infraestrutura, Windows, Fedora Linux, redes, hardware e laboratório de IA local." />
+  <meta property="og:description" content="Suporte técnico e projetos práticos com Windows, Linux, Docker, PowerShell, redes, automação e IA local." />
   <meta property="og:url" content="https://paulojeffersonx.github.io/portfolio/" />
   <meta property="og:image" content="https://paulojeffersonx.github.io/portfolio/assets/preview-aegis.png" />
   <meta property="og:image:alt" content="AEGIS, projeto de IA local do portfólio de Paulo Jefferson" />
@@ -30,64 +30,77 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <div class="noise"></div>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo principal</a>
+  <div id="a11y-status" class="sr-only" role="status" aria-live="polite"></div>
+  <div class="noise" aria-hidden="true"></div>
   <div class="cursor-glow" aria-hidden="true"></div>
 
-  <header class="site-header">
-    <a href="#top" class="brand" aria-label="Voltar ao início">PJ<span>.</span></a>
-    <button class="menu-btn" aria-label="Abrir menu" aria-expanded="false"><span></span><span></span></button>
-    <nav id="nav">
-      <a href="#sobre">Sobre</a>
-      <a href="#experiencia">Experiência</a>
-      <a href="#cases">Cases</a>
-      <a href="#aegis">AEGIS</a>
-      <a href="#formacao">Formação</a>
-      <a href="#contato">Contato</a>
-    </nav>
+  <header class="header-wrap">
+    <div class="site-header">
+      <a href="#top" class="brand" aria-label="Voltar ao início">PJ<span>.</span></a>
+      <button class="menu-btn" aria-label="Abrir menu de navegação" aria-expanded="false" aria-controls="nav"><span aria-hidden="true"></span><span aria-hidden="true"></span></button>
+      <nav id="nav" aria-label="Navegação principal">
+        <a href="#sobre"><span class="nav-ico">⌂</span>Sobre</a>
+        <a href="#experiencia"><span class="nav-ico">▣</span>Experiência</a>
+        <a href="#cases"><span class="nav-ico">◇</span>Projetos</a>
+        <a href="#aegis"><span class="nav-ico">⌾</span>AEGIS</a>
+        <a href="#roadmap"><span class="nav-ico">▤</span>Roadmap</a>
+        <a href="#formacao"><span class="nav-ico">△</span>Formação</a>
+        <a href="#contato"><span class="nav-ico">✉</span>Contato</a>
+      </nav>
+      <div class="header-tools" role="group" aria-label="Escolher tema do site">
+        <button class="theme-btn" type="button" data-theme-choice="light" aria-label="Usar tema claro" title="Tema claro"><span aria-hidden="true">☼</span></button>
+        <button class="theme-btn active" type="button" data-theme-choice="dark" aria-label="Usar tema escuro" title="Tema escuro"><span aria-hidden="true">◐</span></button>
+      </div>
+    </div>
   </header>
 
-  <main id="top">
+  <main id="conteudo" tabindex="-1">
+    <div id="top" aria-hidden="true"></div>
     <section class="hero section">
       <div class="hero-copy reveal">
-        <div class="availability"><span></span> DISPONÍVEL PARA NOVOS DESAFIOS</div>
-        <p class="eyebrow">SUPORTE • FIELD SERVICE • INFRAESTRUTURA</p>
+        <div class="availability"><span aria-hidden="true"></span> DISPONÍVEL PARA NOVOS DESAFIOS</div>
+        <p class="eyebrow hero-eyebrow"><span>›_</span> SUPORTE <b>•</b> FIELD SERVICE <b>•</b> INFRAESTRUTURA</p>
         <h1>PAULO<br><span>JEFFERSON.</span></h1>
-        <p class="lead">Tecnologia na prática. Do atendimento em campo ao laboratório Linux.</p>
+        <p class="lead">Tecnologia na prática.<br>Do atendimento em campo ao <em>laboratório Linux.</em></p>
         <p class="intro">Tecnólogo em Análise e Desenvolvimento de Sistemas, com experiência prática em suporte técnico, troubleshooting, manutenção e infraestrutura de TI.</p>
         <div class="hero-actions">
-          <a class="btn primary" href="#cases">Conheça meu trabalho</a>
-          <a class="btn ghost" href="assets/curriculo-paulo-jefferson.pdf" download target="_blank" rel="noopener">Baixar currículo ↓</a>
+          <a class="btn primary" href="#cases"><span class="btn-ico">▣</span>Conheça meu trabalho <span>›</span></a>
+          <a class="btn ghost" href="assets/curriculo-paulo-jefferson.pdf" download target="_blank" rel="noopener"><span class="btn-ico">⇩</span>Baixar currículo <span>↓</span></a>
         </div>
-        <div class="tag-row">
-          <span>Windows</span><span>Fedora Linux</span><span>Redes</span><span>Hardware</span><span>IA Local</span>
-        </div>
-      </div>
-      <div class="hero-card reveal">
-        <div class="terminal-card">
-          <div class="terminal-top"><i></i><i></i><i></i><span>paulo@fedora:~</span></div>
-          <pre><span class="cyan">$ whoami</span>
-Paulo Jefferson
-
-<span class="cyan">$ focus</span>
-Suporte de TI
-Field Service
-Infraestrutura
-Linux
-
-<span class="cyan">$ lab</span>
-Fedora + AEGIS + Local AI
-
-<span class="cyan">$ status</span>
-<span class="green">ONLINE // ready to troubleshoot</span></pre>
+        <div class="tag-row hero-tags" aria-label="Áreas e tecnologias principais">
+          <span tabindex="0" data-tooltip="Windows — Suporte, manutenção, troubleshooting e administração de estações de trabalho.">▣ Windows</span>
+          <span tabindex="0" data-tooltip="Linux — Ambiente de laboratório, servidores, linha de comando, automação e troubleshooting.">♙ Linux</span>
+          <span tabindex="0" data-tooltip="Redes — TCP/IP, LAN, DNS, conectividade, cabeamento e diagnóstico de rede.">⌁ Redes</span>
+          <span tabindex="0" data-tooltip="Hardware — Diagnóstico, montagem, manutenção preventiva e corretiva de equipamentos.">▤ Hardware</span>
+          <span tabindex="0" data-tooltip="Virtualização — Uso de ambientes virtuais para testes, estudos e laboratórios de infraestrutura.">◇ Virtualização</span>
+          <span tabindex="0" data-tooltip="Docker — Containers e serviços self-hosted utilizados no homelab e na nuvem privada.">▱ Docker</span>
+          <span tabindex="0" data-tooltip="Automação — Scripts e rotinas com Bash, PowerShell e Python para tarefas técnicas.">⌘ Automação</span>
+          <span tabindex="0" data-tooltip="IA Local — Experimentação com AEGIS, Ollama e modelos de linguagem executados localmente.">▣ IA Local</span>
         </div>
       </div>
+
+      <aside class="hero-signal reveal" aria-label="Resumo técnico atual">
+        <div class="signal-line"><span>01</span><div><b>SUPORTE & FIELD SERVICE</b><small>+880 chamados • troubleshooting • SLA</small></div></div>
+        <div class="signal-line"><span>02</span><div><b>INFRAESTRUTURA & HOMELAB</b><small>Linux • Docker • redes • self-hosted</small></div></div>
+        <div class="signal-line"><span>03</span><div><b>AUTOMAÇÃO & IA LOCAL</b><small>PowerShell • Bash • AEGIS • Ollama</small></div></div>
+        <div class="signal-status"><i aria-hidden="true"></i><span>BUILDING • LEARNING • SOLVING</span></div>
+      </aside>
+
     </section>
 
-    <section class="metrics section reveal">
-      <div><strong><span data-count="880">0</span>+</strong><span>chamados atendidos</span></div>
-      <div><strong>FIELD</strong><span>Service na prática</span></div>
-      <div><strong>WIN + LINUX</strong><span>Ambientes suportados</span></div>
-      <div><strong>ADS</strong><span>Tecnólogo formado</span></div>
+    <section class="hero-metrics section reveal">
+      <div class="metric-card"><span class="metric-icon">↗</span><div><strong><span data-count="880">0</span>+</strong><b>Chamados atendidos</b><small>Suporte técnico e field service</small></div></div>
+      <div class="metric-card"><span class="metric-icon">▣</span><div><strong>PJ / MEI</strong><b>Prestação de serviços</b><small>Atuação profissional em TI</small></div></div>
+      <div class="metric-card"><span class="metric-icon">▤</span><div><strong>LAB</strong><b>Infraestrutura prática</b><small>Windows • Linux • Docker</small></div></div>
+      <div class="metric-card"><span class="metric-icon">&lt;/&gt;</span><div><strong>AUTOMAÇÃO</strong><b>Bash • PowerShell • Python</b><small>Scripts e soluções para rotina técnica</small></div></div>
+      <div class="metric-card"><span class="metric-icon">◉</span><div><strong>IA LOCAL</strong><b>AEGIS • Ollama • LLMs</b><small>Experimentação e produtividade</small></div></div>
+    </section>
+
+    <section class="hero-quote section reveal">
+      <span class="quote-mark">“</span>
+      <p>Não é sobre ter todas as respostas, mas sobre ter a curiosidade e a disciplina para resolver cada problema e evoluir todos os dias.</p>
+      <div><strong>— Paulo Jefferson</strong><small>Tecnologia é ferramenta. Propósito é solução.</small></div>
     </section>
 
     <section id="sobre" class="section grid-2">
@@ -116,7 +129,7 @@ Fedora + AEGIS + Local AI
             <h3>Técnico de Suporte de TI | Suporte em Campo</h3>
             <p class="company">FindUP • Prestador de Serviços de TI (PJ) — Cencosud Brasil</p>
             <p>Mais de 880 chamados on-site em ambientes corporativos e operações de varejo, com troubleshooting de hardware/software, manutenção preventiva e corretiva, suporte a desktops, notebooks, periféricos, PDVs, Windows e Linux, além de conectividade e infraestrutura local.</p>
-            <div class="skills-grid compact-grid"><span>N1/N2</span><span>Troubleshooting</span><span>Windows</span><span>Linux</span><span>TCP/IP • LAN</span><span>SLA</span></div>
+            <div class="skills-grid compact-grid"><span tabindex="0" data-tooltip="N1/N2 — Atendimento de primeiro e segundo nível, do diagnóstico inicial à resolução técnica em campo.">N1/N2</span><span>Troubleshooting</span><span>Windows</span><span>Linux</span><span tabindex="0" data-tooltip="TCP/IP e LAN — Diagnóstico de conectividade, endereçamento e comunicação em redes locais.">TCP/IP • LAN</span><span tabindex="0" data-tooltip="SLA — Cumprimento de prazos e níveis de serviço definidos para atendimento e resolução dos chamados.">SLA</span></div>
           </div>
         </article>
 
@@ -127,7 +140,7 @@ Fedora + AEGIS + Local AI
             <h3>Almoxarife / Ponto Focal de TI</h3>
             <p class="company">Electrolux Group</p>
             <p>Atuação voluntária como ponto focal de TI da unidade, auxiliando usuários e solucionando problemas de hardware, software e rede, em paralelo à gestão de materiais e peças com SAP e WMS.</p>
-            <div class="skills-grid compact-grid"><span>SAP</span><span>WMS</span><span>Suporte local</span><span>Processos</span></div>
+            <div class="skills-grid compact-grid"><span tabindex="0" data-tooltip="SAP — ERP utilizado em rotinas corporativas de materiais, estoque e processos operacionais.">SAP</span><span tabindex="0" data-tooltip="WMS — Sistema de gerenciamento de armazém utilizado em rotinas de estoque e logística.">WMS</span><span>Suporte local</span><span>Processos</span></div>
           </div>
         </article>
 
@@ -138,7 +151,7 @@ Fedora + AEGIS + Local AI
             <h3>Assistente de Compras e Almoxarifado | Suporte de TI</h3>
             <p class="company">Pingon Indústria, Comércio e Locação de Equipamentos</p>
             <p>Suporte voluntário de TI, incluindo manutenção de computadores, formatação, limpeza preventiva e testes de rede, além de rotinas de compras, estoque, notas fiscais e ERP Alterdata.</p>
-            <div class="skills-grid compact-grid"><span>Hardware</span><span>Redes</span><span>Windows</span><span>Alterdata</span></div>
+            <div class="skills-grid compact-grid"><span>Hardware</span><span>Redes</span><span>Windows</span><span tabindex="0" data-tooltip="Alterdata — ERP utilizado em rotinas administrativas, compras, estoque e notas fiscais.">Alterdata</span></div>
           </div>
         </article>
         <article class="timeline-item reveal">
@@ -156,50 +169,123 @@ Fedora + AEGIS + Local AI
 
     <section id="cases" class="section">
       <div class="section-heading reveal">
-        <p class="eyebrow">03 // CASES TÉCNICOS</p>
-        <h2>Problemas reais transformados em soluções documentadas.</h2>
+        <p class="eyebrow">03 // PROJETOS & LABS</p>
+        <h2>Infraestrutura, automação, sistemas e hardware na prática.</h2>
+        <p class="projects-intro">Projetos pessoais, acadêmicos e laboratórios usados para aprofundar conhecimentos em Linux, Windows, redes, automação, containers, IA e hardware.</p>
       </div>
-      <div class="cards-3">
-        <article class="case-card reveal">
-          <span class="case-no">CASE // 01</span>
-          <h3>Recuperação de ambiente Fedora</h3>
-          <p>Restauração de aproximadamente 98 GB de dados do usuário, subvolumes Btrfs, configurações e permissões após reinstalação.</p>
-          <div class="case-result"><b>RESULTADO</b><span>Ambiente e arquivos recuperados com preservação seletiva de configurações.</span></div>
-          <div class="tag-row"><span>Fedora</span><span>Btrfs</span><span>rsync</span><span>fstab</span></div>
+
+      <div class="subsection-label reveal">FEATURED PROJECTS</div>
+      <div class="cards-3 project-grid">
+        <article class="case-card project-featured reveal">
+          <span class="case-no">PROJECT // 01 • PRIVATE CLOUD</span>
+          <h3>Private Cloud & Home Infrastructure</h3>
+          <p>Servidor físico dedicado baseado na <strong>TN5095A</strong>, Intel N5095 e 16 GB DDR4, operando 24/7 com Ubuntu Server 24.04 LTS como núcleo da minha infraestrutura self-hosted: nuvem privada, microsserviços, automação, DNS local, monitoramento e backup.</p>
+          <div class="project-metrics"><span><b>TN5095A</b> plataforma</span><span><b>16 GB</b> DDR4</span><span><b>24/7</b> operação</span><span><b>03:30</b> backup</span></div>
+          <div class="case-result"><b>HOME NETWORK / DNS</b><span>AdGuard Home configurado como DNS da rede por meio do roteador, centralizando a filtragem de anúncios, rastreadores e telemetria para os dispositivos da residência.</span></div>
+          <div class="case-result"><b>STORAGE & BACKUP</b><span>Sistema em M.2/NVMe, dados e containers em SSD dedicado e HD de 1 TB como cofre de backup, com rotina Bash/Cron e retenção automática de 7 dias.</span></div>
+          <div class="infra-flow" aria-label="Fluxo simplificado da infraestrutura de rede"><span>INTERNET</span><i aria-hidden="true">→</i><span>ROTEADOR</span><i aria-hidden="true">→</i><span>DNS / ADGUARD</span><i aria-hidden="true">→</i><span>REDE LOCAL</span></div>
+          <div class="tag-row"><span tabindex="0" data-tooltip="Ubuntu Server 24.04 LTS — Sistema operacional do servidor físico que sustenta a infraestrutura self-hosted.">Ubuntu Server</span><span tabindex="0" data-tooltip="Docker — Isola e executa os microsserviços do servidor em containers independentes.">Docker</span><span tabindex="0" data-tooltip="Portainer — Interface utilizada para administrar containers, stacks, volumes e redes Docker.">Portainer</span><span tabindex="0" data-tooltip="Nextcloud — Serviço de nuvem privada para armazenamento e sincronização de arquivos dentro da infraestrutura.">Nextcloud</span><span tabindex="0" data-tooltip="n8n — Plataforma self-hosted usada para criar automações e integrações entre serviços e APIs.">n8n</span><span tabindex="0" data-tooltip="AdGuard Home — Atua como DNS local da residência, filtrando anúncios, rastreadores e telemetria de forma centralizada.">AdGuard Home</span><span tabindex="0" data-tooltip="DNS Filtering — O roteador utiliza o servidor como DNS, fazendo os dispositivos da rede passarem pela filtragem configurada.">DNS Filtering</span><span tabindex="0" data-tooltip="Cockpit — Painel web utilizado para acompanhar recursos do host, serviços e telemetria do servidor.">Cockpit</span><span tabindex="0" data-tooltip="OpenSSH — Administração remota segura do Ubuntu Server através do terminal.">SSH</span><span tabindex="0" data-tooltip="Bash + Cron — Script de backup executado automaticamente todos os dias às 03:30, com retenção de 7 dias.">Bash/Cron</span><span tabindex="0" data-tooltip="Hardening — Aplicação de atualizações, revisão de firmware/UEFI e medidas para reduzir a superfície de risco do servidor.">Hardening</span></div>
         </article>
-        <article class="case-card reveal">
-          <span class="case-no">CASE // 02</span>
-          <h3>Backup e recuperação Windows 11</h3>
-          <p>Criação e gerenciamento de imagem de sistema, preparação de discos e estratégia de restauração usando Clonezilla.</p>
-          <div class="case-result"><b>FOCO</b><span>Recuperação confiável e organização de armazenamento entre Windows e Linux.</span></div>
-          <div class="tag-row"><span>Clonezilla</span><span>Windows 11</span><span>NTFS</span><span>UEFI</span></div>
+
+        <article class="case-card project-featured reveal windows-automation-card">
+          <span class="case-no">PROJECT // 02 • ACADÊMICO</span>
+          <h3>Windows Support Automation Platform</h3>
+          <p>Ferramenta CLI em PowerShell criada para centralizar e padronizar rotinas recorrentes de suporte técnico, manutenção preventiva, diagnóstico, atualização e inventário de estações Windows.</p>
+
+          <div class="project-metrics" aria-label="Resumo técnico do projeto">
+            <span><b>7 módulos</b> fluxo automatizado</span>
+            <span><b>PowerShell</b> CLI principal</span>
+            <span><b>CIM / WMI</b> telemetria</span>
+            <span><b>Windows</b> 10 / 11</span>
+          </div>
+
+          <div class="case-result"><b>ESCOPO DA AUTOMAÇÃO</b><span>Validação administrativa, reparo da imagem do Windows, recuperação de rede, limpeza de temporários, atualização de aplicações, otimização de armazenamento e inventário técnico de hardware.</span></div>
+          <div class="case-result"><b>AI-ASSISTED DEVELOPMENT</b><span>Projeto idealizado, estruturado, testado e homologado por mim, com IA generativa utilizada como apoio à geração, refatoração e depuração do código.</span></div>
+
+          <div class="infra-flow" aria-label="Fluxo resumido da automação Windows">
+            <span>ADMIN CHECK</span><i aria-hidden="true">→</i><span>DISM</span><i aria-hidden="true">→</i><span>DNS / WINSOCK</span><i aria-hidden="true">→</i><span>CLEANUP</span><i aria-hidden="true">→</i><span>WINGET</span><i aria-hidden="true">→</i><span>STORAGE</span><i aria-hidden="true">→</i><span>CIM</span>
+          </div>
+
+          <div class="tag-row">
+            <span tabindex="0" data-tooltip="PowerShell — Base da ferramenta, responsável por orquestrar as rotinas administrativas e integrar os componentes do Windows.">PowerShell</span>
+            <span tabindex="0" data-tooltip="CIM/WMI — Utilizado para consultar CPU, memória RAM, armazenamento e informações do sistema operacional diretamente do Windows.">CIM/WMI</span>
+            <span tabindex="0" data-tooltip="DISM — Executado pelo projeto para verificar e reparar a integridade da imagem de componentes do Windows.">DISM</span>
+            <span tabindex="0" data-tooltip="Winget — Gerenciador de pacotes utilizado para automatizar a atualização silenciosa das aplicações instaladas.">Winget</span>
+            <span tabindex="0" data-tooltip="Winsock Reset — Rotina integrada para restauração da pilha de sockets durante troubleshooting de conectividade.">Winsock</span>
+            <span tabindex="0" data-tooltip="Optimize-Volume — Cmdlet utilizado nas rotinas de manutenção e otimização das unidades de armazenamento.">Optimize-Volume</span>
+            <span tabindex="0" data-tooltip="AI-Assisted Development — IA generativa apoiou geração, revisão e debugging; requisitos, arquitetura, testes e homologação foram conduzidos por mim.">AI-Assisted Dev</span>
+          </div>
         </article>
+      </div>
+
+      <div class="subsection-label reveal">INFRASTRUCTURE LAB</div>
+      <div class="cards-3 project-grid lab-cards">
         <article class="case-card reveal">
-          <span class="case-no">CASE // 03</span>
-          <h3>Linux Workstation</h3>
-          <p>Ambiente pessoal para administração, troubleshooting, armazenamento, scripts, IA local e experimentação técnica.</p>
-          <div class="case-result"><b>STACK</b><span>Fedora como workstation principal para estudo e laboratório.</span></div>
-          <div class="tag-row"><span>Linux</span><span>Bash</span><span>Git</span><span>Python</span></div>
+          <span class="case-no">LAB // FEDORA WORKSTATION</span>
+          <h3>Fedora Infrastructure Lab</h3>
+          <p>Minha workstation Linux principal e ambiente contínuo de estudo, administração, troubleshooting, recuperação de sistemas, automação, Git, Python e experimentação com IA local.</p>
+          <div class="case-result"><b>RECOVERY CASE</b><span>Recuperação de aproximadamente 98 GB, subvolumes Btrfs, permissões, fstab e restauração seletiva do ambiente após reinstalação.</span></div>
+          <div class="tag-row"><span tabindex="0" data-tooltip="Fedora — Minha workstation principal e ambiente diário para labs, automação, desenvolvimento e IA local.">Fedora</span><span tabindex="0" data-tooltip="Btrfs — Sistema de arquivos utilizado com subvolumes no Fedora e trabalhado no processo de recuperação do ambiente.">Btrfs</span><span tabindex="0" data-tooltip="rsync — Ferramenta utilizada para restaurar e sincronizar aproximadamente 98 GB de dados do ambiente.">rsync</span><span tabindex="0" data-tooltip="fstab — Configuração de montagens persistentes, incluindo armazenamento NTFS utilizado entre Linux e Windows.">fstab</span><span>Bash</span><span>Git</span><span>Python</span></div>
+        </article>
+
+        <article class="case-card reveal">
+          <span class="case-no">LAB // WINDOWS WORKSTATION</span>
+          <h3>Windows Workstation Engineering</h3>
+          <p>Laboratório prático de administração e troubleshooting Windows, incluindo armazenamento, particionamento, NTFS, GPT/UEFI, manutenção, imagens de sistema e estratégias de recuperação.</p>
+          <div class="case-result"><b>ESCOPO</b><span>Windows 11, Clonezilla, preparação e reorganização de discos, imagem completa do sistema e interoperabilidade de armazenamento com Linux.</span></div>
+          <div class="tag-row"><span>Windows 11</span><span tabindex="0" data-tooltip="Clonezilla — Utilizado para criação e restauração de imagens completas do Windows 11.">Clonezilla</span><span tabindex="0" data-tooltip="NTFS — Sistema de arquivos usado nas partições de dados e na interoperabilidade de armazenamento com Windows.">NTFS</span><span tabindex="0" data-tooltip="GPT/UEFI — Estrutura de particionamento e firmware trabalhados na preparação, boot e recuperação do sistema.">GPT/UEFI</span><span>Storage</span><span>Troubleshooting</span></div>
+        </article>
+
+        <article class="case-card reveal">
+          <span class="case-no">LAB // LOCAL AI</span>
+          <h3>Local AI Lab</h3>
+          <p>Experimentação com modelos de linguagem executados localmente na workstation, avaliando quantização, uso de VRAM, desempenho e integração com ferramentas do ambiente Linux.</p>
+          <div class="case-result"><b>AMBIENTE</b><span>Ryzen 7 5700X, 32 GB DDR4 e Radeon RX 6600 8 GB executando Ollama e LLMs locais.</span></div>
+          <div class="tag-row"><span tabindex="0" data-tooltip="Ollama — Runtime utilizado para executar modelos de linguagem localmente na workstation.">Ollama</span><span tabindex="0" data-tooltip="LLMs — Modelos de linguagem testados localmente para experimentação, automação e produtividade.">LLMs</span><span>Linux</span><span tabindex="0" data-tooltip="RX 6600 8 GB — GPU utilizada nos testes de inferência local e avaliação de uso de VRAM.">RX 6600</span><span tabindex="0" data-tooltip="Inference — Execução do modelo para gerar respostas localmente, avaliando desempenho, memória e quantização.">Inference</span></div>
+        </article>
+      </div>
+
+      <div class="subsection-label reveal">LABS & BUILDS</div>
+      <div class="cards-3 project-grid lab-cards">
+        <article class="case-card reveal">
+          <span class="case-no">BUILD // BATOCERA MINI-ITX</span>
+          <h3>Retro Gaming System</h3>
+          <p>Montagem e configuração de um sistema compacto dedicado a jogos e emulação com Batocera Linux, usando uma segunda placa <strong>TN5095A</strong> independente do servidor.</p>
+          <div class="case-result"><b>HARDWARE</b><span>TN5095A com Intel N5095, 16 GB DDR4, sistema em M.2, SSD de 480 GB, dois joysticks e adaptador Bluetooth USB.</span></div>
+          <div class="tag-row"><span tabindex="0" data-tooltip="Batocera Linux — Sistema dedicado a emulação e jogos retrô, configurado como console compacto.">Batocera</span><span>Linux</span><span tabindex="0" data-tooltip="TN5095A — Segunda placa física desta plataforma, independente da unidade usada no servidor Private Cloud.">TN5095A</span><span tabindex="0" data-tooltip="Mini-ITX — Formato compacto utilizado na montagem física do sistema.">Mini-ITX</span><span>Bluetooth</span><span tabindex="0" data-tooltip="Dual Joystick — Dois controles configurados para uso simultâneo no sistema Batocera.">Dual Joystick</span></div>
         </article>
       </div>
     </section>
 
     <section id="aegis" class="section aegis-section">
       <div class="aegis-copy reveal">
-        <p class="eyebrow">04 // PROJETO EM DESTAQUE</p>
-        <h2>AEGIS <span>// AI CORE</span></h2>
-        <p class="lead compact">Assistente de IA integrada ao meu ambiente Fedora.</p>
-        <p>Projeto pessoal de implementação e personalização de um agente de inteligência artificial utilizado para automação, pesquisa, desenvolvimento, experimentação com modelos de linguagem e interação com ferramentas do sistema.</p>
-        <div class="aegis-stats">
-          <div><strong>28</strong><span>Tools</span></div>
-          <div><strong>87</strong><span>Skills</span></div>
-          <div><strong>LOCAL</strong><span>AI Lab</span></div>
+        <p class="eyebrow">04 // PERSONAL AI ENVIRONMENT</p>
+        <h2>AEGIS <span>// LOCAL AI ASSISTANT</span></h2>
+        <p class="lead compact">Um ambiente de IA pessoal integrado ao Fedora para pesquisa, automação e experimentação.</p>
+        <p>Implementação e personalização de um agente de IA baseado no <strong>Hermes Agent</strong>, adaptado ao meu ambiente Linux. O AEGIS reúne ferramentas e skills para ampliar fluxos de trabalho técnicos, interagir com recursos do sistema e experimentar modelos de linguagem executados localmente.</p>
+
+        <div class="aegis-stats" aria-label="Indicadores atuais do AEGIS">
+          <div tabindex="0" data-tooltip="Tools — Conjunto de ferramentas que o agente pode acionar para executar tarefas e interagir com recursos do ambiente."><strong>22</strong><span>Tools</span></div>
+          <div tabindex="0" data-tooltip="Skills — Capacidades e instruções especializadas disponíveis ao agente para diferentes tipos de tarefa."><strong>96</strong><span>Skills</span></div>
+          <div tabindex="0" data-tooltip="Local-first — Parte dos experimentos utiliza modelos executados na própria workstation por meio do Ollama."><strong>LOCAL</strong><span>AI Runtime</span></div>
         </div>
-        <div class="tag-row"><span>Fedora</span><span>Hermes Agent</span><span>Python</span><span>Ollama</span><span>LLMs</span></div>
+
+        <div class="aegis-flow" aria-label="Arquitetura resumida do AEGIS">
+          <span>USUÁRIO</span><i>→</i><span>AEGIS</span><i>→</i><span>TOOLS + SKILLS</span><i>→</i><span>FEDORA / OLLAMA</span>
+        </div>
+
+        <div class="aegis-capabilities" aria-label="Áreas exploradas no projeto AEGIS">
+          <div><b>AUTOMAÇÃO</b><span>Experimentação assistida por agente em fluxos e tarefas técnicas.</span></div>
+          <div><b>LOCAL AI</b><span>Integração com modelos executados localmente via Ollama.</span></div>
+          <div><b>LINUX WORKFLOW</b><span>Integração ao Fedora como parte do laboratório técnico diário.</span></div>
+          <div><b>EXTENSIBILIDADE</b><span>Ambiente orientado a ferramentas e skills especializadas.</span></div>
+        </div>
+
+        <div class="tag-row"><span tabindex="0" data-tooltip="Fedora — Sistema principal onde o AEGIS é executado, testado e integrado ao meu laboratório técnico.">Fedora</span><span tabindex="0" data-tooltip="Hermes Agent — Base utilizada para implementar e personalizar o AEGIS; o projeto é uma implementação própria sobre essa base, não um agente criado do zero.">Hermes Agent</span><span tabindex="0" data-tooltip="Python — Linguagem presente no ecossistema do agente e nos estudos de automação do ambiente.">Python</span><span tabindex="0" data-tooltip="Ollama — Runtime usado para executar e testar modelos de linguagem localmente na workstation.">Ollama</span><span tabindex="0" data-tooltip="LLMs — Modelos de linguagem utilizados em testes de inferência, produtividade, automação e integração com o agente.">LLMs</span></div>
       </div>
       <div class="aegis-art reveal">
-        <div class="scanline"></div>
-        <img src="assets/aegis.png" alt="Identidade visual da assistente AEGIS" />
+        <div class="scanline" aria-hidden="true"></div>
+        <img src="assets/aegis.png" alt="Identidade visual do projeto AEGIS, ambiente pessoal de inteligência artificial" loading="lazy" decoding="async" />
         <span class="image-caption">AEGIS // PERSONAL AI ENVIRONMENT</span>
       </div>
     </section>
@@ -207,19 +293,98 @@ Fedora + AEGIS + Local AI
     <section class="section lab-section">
       <div class="section-heading reveal">
         <p class="eyebrow">05 // LOCAL AI LAB</p>
-        <h2>Experimentação com IA executada localmente.</h2>
+        <h2>IA local como laboratório de infraestrutura, desempenho e integração.</h2>
+        <p class="projects-intro">Ambiente prático para executar modelos de linguagem na própria workstation, comparar consumo de recursos, observar limites de VRAM e testar como IA local pode se integrar a ferramentas, automações e ao AEGIS.</p>
       </div>
+
       <div class="lab-grid reveal">
-        <div><span>CPU</span><strong>Ryzen 7 5700X</strong><small>8 cores / 16 threads</small></div>
-        <div><span>RAM</span><strong>32 GB DDR4</strong><small>Workstation</small></div>
-        <div><span>GPU</span><strong>Radeon RX 6600</strong><small>8 GB VRAM</small></div>
-        <div><span>STACK</span><strong>Ollama + LLMs</strong><small>Inferência local</small></div>
+        <div tabindex="0" data-tooltip="Ryzen 7 5700X — CPU de 8 núcleos e 16 threads utilizada como base da workstation e apoio às cargas de IA local."><span>CPU</span><strong>Ryzen 7 5700X</strong><small>8 cores / 16 threads</small></div>
+        <div tabindex="0" data-tooltip="32 GB DDR4 — Memória do sistema utilizada pela workstation, ferramentas de desenvolvimento e cargas auxiliares dos modelos locais."><span>RAM</span><strong>32 GB DDR4</strong><small>Workstation</small></div>
+        <div tabindex="0" data-tooltip="Radeon RX 6600 — GPU de 8 GB utilizada nos testes de inferência e avaliação prática do limite de VRAM."><span>GPU</span><strong>Radeon RX 6600</strong><small>8 GB VRAM</small></div>
+        <div tabindex="0" data-tooltip="Ollama + LLMs — Stack usada para baixar, gerenciar e executar modelos de linguagem diretamente no computador."><span>RUNTIME</span><strong>Ollama + LLMs</strong><small>Inferência local</small></div>
+      </div>
+
+      <div class="ai-lab-focus reveal">
+        <article><span>01</span><div><b>MODELOS & QUANTIZAÇÃO</b><p>Testes com diferentes modelos e quantizações para equilibrar qualidade, tamanho e uso de memória.</p></div></article>
+        <article><span>02</span><div><b>VRAM & DESEMPENHO</b><p>Observação prática de consumo de GPU, memória disponível e comportamento da inferência local.</p></div></article>
+        <article><span>03</span><div><b>INTEGRAÇÃO</b><p>Uso do runtime local junto ao ambiente Fedora, AEGIS e fluxos de automação e produtividade.</p></div></article>
+        <article><span>04</span><div><b>LOCAL-FIRST</b><p>Experimentação com processamento realizado na própria máquina para aprender sobre autonomia e arquitetura de IA local.</p></div></article>
+      </div>
+
+      <div class="tag-row ai-lab-tags"><span tabindex="0" data-tooltip="Quantização — Técnica que reduz a precisão numérica do modelo para diminuir tamanho e consumo de memória, permitindo executar LLMs maiores em hardware limitado.">Quantização</span><span tabindex="0" data-tooltip="VRAM — Memória dedicada da GPU; é um dos principais limites práticos para o tamanho do modelo e a aceleração da inferência local.">VRAM</span><span tabindex="0" data-tooltip="Inferência — Etapa em que um modelo já treinado processa a entrada e gera uma resposta.">Inferência</span><span tabindex="0" data-tooltip="Local-first — Abordagem em que o processamento principal ocorre no equipamento local, reduzindo dependência de serviços externos durante os testes.">Local-first</span><span tabindex="0" data-tooltip="Ollama — Runtime utilizado para gerenciar e executar modelos de linguagem localmente.">Ollama</span></div>
+    </section>
+
+    <section id="roadmap" class="section roadmap-section">
+      <div class="section-heading reveal">
+        <p class="eyebrow">06 // ROADMAP</p>
+        <h2>Infraestrutura como prioridade. DevOps como evolução.</h2>
+        <p class="projects-intro">O roadmap separa prioridade atual, trilha de aprendizado, projeto secundário e iniciativas futuras. Assim, o que já está em prática não se mistura com o que ainda está sendo planejado.</p>
+      </div>
+
+      <div class="bubble-row reveal" aria-label="Resumo do roadmap">
+        <span class="bubble bubble-hot">PRIORIDADE • ACTIVE DIRECTORY</span>
+        <span class="bubble bubble-active">TRILHA ATIVA • DEVOPS</span>
+        <span class="bubble">PYTHON • EM EVOLUÇÃO</span>
+        <span class="bubble bubble-soft">PDV • SECUNDÁRIO</span>
+      </div>
+
+      <div class="roadmap-accordion reveal" aria-label="Prioridades e trilhas do roadmap">
+        <article class="roadmap-item priority">
+          <button class="roadmap-toggle" type="button" aria-expanded="false">
+            <span class="roadmap-toggle-meta">PRIORIDADE // ACTIVE DIRECTORY</span>
+            <span class="roadmap-toggle-title">Corporate Active Directory Lab</span>
+            <span class="roadmap-toggle-icon" aria-hidden="true">+</span>
+          </button>
+          <div class="roadmap-expand" aria-hidden="true"><div class="roadmap-expand-inner"><div class="roadmap-expand-content">
+            <p>Laboratório corporativo com Windows Server para domínio, usuários e OUs, grupos, GPO, DNS, compartilhamentos e permissões NTFS. O objetivo é aproximar o homelab de cenários reais de suporte e administração de infraestrutura Windows.</p>
+            <div class="tag-row"><span>Windows Server</span><span tabindex="0" data-tooltip="AD DS — Active Directory Domain Services para domínio, identidades, computadores, grupos e políticas corporativas.">AD DS</span><span tabindex="0" data-tooltip="GPO — Políticas de Grupo para aplicar configurações e restrições de forma centralizada aos usuários e computadores do domínio.">GPO</span><span>DNS</span><span tabindex="0" data-tooltip="NTFS — Permissões de arquivos e pastas que serão praticadas no laboratório corporativo Windows.">NTFS</span></div>
+            <div class="focus-side"><span class="mini-kicker">LAB GOAL</span><strong>SUPORTE → INFRA → SYSADMIN</strong><small>Projeto principal em paralelo aos estudos de DevOps.</small></div>
+          </div></div></div>
+        </article>
+
+        <article class="roadmap-item">
+          <button class="roadmap-toggle" type="button" aria-expanded="false">
+            <span class="roadmap-toggle-meta">TRILHA ATIVA // DEVOPS</span>
+            <span class="roadmap-toggle-title">DevOps Learning Path</span>
+            <span class="roadmap-toggle-icon" aria-hidden="true">+</span>
+          </button>
+          <div class="roadmap-expand" aria-hidden="true"><div class="roadmap-expand-inner"><div class="roadmap-expand-content">
+            <div class="devops-path"><div class="devops-path-head"><div></div><p>Evolução baseada no que já uso no laboratório, reforçando automação com Python antes de avançar para CI/CD, Cloud, IaC e orquestração.</p></div>
+            <div class="path-bubbles" aria-label="Etapas do roadmap DevOps">
+              <span class="path-node done" data-tooltip="Linux — Base já utilizada diariamente em workstation, servidor, troubleshooting e automação.">Linux <b>✓</b></span>
+              <span class="path-node done" data-tooltip="Git/GitHub — Versionamento, repositórios e publicação dos projetos do portfólio.">Git/GitHub <b>✓</b></span>
+              <span class="path-node done" data-tooltip="Bash — Scripts e automações para rotinas Linux, backup e administração do homelab.">Bash <b>✓</b></span>
+              <span class="path-node current" data-tooltip="Python — Etapa atual de evolução para automação, APIs, manipulação de dados e ferramentas de infraestrutura.">Python <b>↗</b></span>
+              <span class="path-node done" data-tooltip="Docker — Já utilizado para containers e serviços da nuvem privada auto-hospedada.">Docker <b>✓</b></span>
+              <span class="path-node" data-tooltip="CI/CD — Próxima etapa para automatizar testes, integração e entrega de projetos.">CI/CD</span>
+              <span class="path-node" data-tooltip="Cloud — Evolução planejada para serviços e infraestrutura em provedores de nuvem.">Cloud</span>
+              <span class="path-node" data-tooltip="Terraform — Infraestrutura como código para provisionamento reproduzível de ambientes.">Terraform</span>
+              <span class="path-node" data-tooltip="Kubernetes — Orquestração de containers como etapa avançada da trilha DevOps.">Kubernetes</span>
+              <span class="path-node" data-tooltip="Observability — Métricas, logs, alertas e monitoramento para entender a saúde dos serviços.">Observability</span>
+            </div></div>
+          </div></div></div>
+        </article>
+      </div>
+
+      <div class="roadmap-legend compact-legend reveal"><span><i class="status doing" aria-hidden="true"></i><span class="sr-only">Status: </span>PRIORIDADE / EM EVOLUÇÃO</span><span><i class="status planned" aria-hidden="true"></i><span class="sr-only">Status: </span>PLANEJADO</span><span><i class="status future" aria-hidden="true"></i><span class="sr-only">Status: </span>FUTURO</span></div>
+
+      <div class="roadmap-accordion-group reveal">
+        <p class="subsection-label">PLANEJADOS & FUTUROS</p>
+        <div class="roadmap-accordion">
+          <article class="roadmap-item secondary"><button class="roadmap-toggle" type="button" aria-expanded="false"><span class="roadmap-toggle-meta">SECUNDÁRIO // PLANEJAMENTO</span><span class="roadmap-toggle-title">Sistema PDV</span><span class="roadmap-toggle-icon" aria-hidden="true">+</span></button><div class="roadmap-expand" aria-hidden="true"><div class="roadmap-expand-inner"><div class="roadmap-expand-content"><p>Projeto paralelo de desenvolvimento para uma solução de ponto de venda e gestão comercial, com produtos, estoque, vendas, caixa, usuários e banco de dados.</p><div class="tag-row"><span>PDV</span><span>ADS</span><span>Database</span><span>Retail</span></div></div></div></div></article>
+          <article class="roadmap-item"><button class="roadmap-toggle" type="button" aria-expanded="false"><span class="roadmap-toggle-meta">PLANEJADO // MONITORING</span><span class="roadmap-toggle-title">Infrastructure Monitoring</span><span class="roadmap-toggle-icon" aria-hidden="true">+</span></button><div class="roadmap-expand" aria-hidden="true"><div class="roadmap-expand-inner"><div class="roadmap-expand-content"><p>Evolução do Private Cloud com monitoramento centralizado, dashboards, métricas de host/containers e alertas de disponibilidade.</p><div class="tag-row"><span>Grafana</span><span>Prometheus / Zabbix</span><span>Monitoring</span></div></div></div></div></article>
+          <article class="roadmap-item"><button class="roadmap-toggle" type="button" aria-expanded="false"><span class="roadmap-toggle-meta">PLANEJADO // ITSM</span><span class="roadmap-toggle-title">Help Desk / ITSM Lab</span><span class="roadmap-toggle-icon" aria-hidden="true">+</span></button><div class="roadmap-expand" aria-hidden="true"><div class="roadmap-expand-inner"><div class="roadmap-expand-content"><p>Ambiente de gestão de chamados, ativos, categorias, SLA e base de conhecimento para simulação de uma operação corporativa de suporte.</p><div class="tag-row"><span>GLPI</span><span>ITSM</span><span tabindex="0" data-tooltip="SLA — Cumprimento de prazos e níveis de serviço definidos para atendimento e resolução dos chamados.">SLA</span><span>Inventory</span></div></div></div></div></article>
+          <article class="roadmap-item future"><button class="roadmap-toggle" type="button" aria-expanded="false"><span class="roadmap-toggle-meta">FUTURO // NETWORKING</span><span class="roadmap-toggle-title">Secure Remote Access</span><span class="roadmap-toggle-icon" aria-hidden="true">+</span></button><div class="roadmap-expand" aria-hidden="true"><div class="roadmap-expand-inner"><div class="roadmap-expand-content"><p>VPN para acesso remoto seguro aos serviços do Homelab, com controle de peers, rotas e acesso à infraestrutura interna.</p><div class="tag-row"><span>WireGuard</span><span>VPN</span><span>Networking</span></div></div></div></div></article>
+          <article class="roadmap-item future"><button class="roadmap-toggle" type="button" aria-expanded="false"><span class="roadmap-toggle-meta">FUTURO // INVENTORY</span><span class="roadmap-toggle-title">Automated IT Inventory</span><span class="roadmap-toggle-icon" aria-hidden="true">+</span></button><div class="roadmap-expand" aria-hidden="true"><div class="roadmap-expand-inner"><div class="roadmap-expand-content"><p>Evolução do projeto PowerShell para inventário automatizado de múltiplas estações e geração centralizada de relatórios.</p><div class="tag-row"><span>PowerShell</span><span>CIM</span><span>CSV/HTML/JSON</span></div></div></div></div></article>
+          <article class="roadmap-item future"><button class="roadmap-toggle" type="button" aria-expanded="false"><span class="roadmap-toggle-meta">FUTURO // RECOVERY</span><span class="roadmap-toggle-title">Homelab Disaster Recovery</span><span class="roadmap-toggle-icon" aria-hidden="true">+</span></button><div class="roadmap-expand" aria-hidden="true"><div class="roadmap-expand-inner"><div class="roadmap-expand-content"><p>Evolução da estratégia de backup para modelo 3-2-1, verificação de integridade, testes de restauração, logs e documentação de RPO/RTO.</p><div class="tag-row"><span tabindex="0" data-tooltip="Backup 3-2-1 — Estratégia futura com três cópias, em dois tipos de mídia e uma cópia fora do ambiente principal.">Backup 3-2-1</span><span tabindex="0" data-tooltip="RPO/RTO — Metas de perda aceitável de dados e tempo de recuperação que serão documentadas no plano de continuidade.">RPO/RTO</span><span>Recovery</span></div></div></div></div></article>
+          <article class="roadmap-item future"><button class="roadmap-toggle" type="button" aria-expanded="false"><span class="roadmap-toggle-meta">FUTURO // SEGMENTATION</span><span class="roadmap-toggle-title">Network Segmentation Lab</span><span class="roadmap-toggle-icon" aria-hidden="true">+</span></button><div class="roadmap-expand" aria-hidden="true"><div class="roadmap-expand-inner"><div class="roadmap-expand-content"><p>Laboratório de VLANs e segmentação para servidores, clientes e dispositivos, com DHCP/DNS, roteamento e políticas entre redes.</p><div class="tag-row"><span tabindex="0" data-tooltip="VLAN — Segmentação lógica planejada para separar servidores, clientes e dispositivos da rede.">VLAN</span><span tabindex="0" data-tooltip="DHCP — Distribuição automática de endereços e parâmetros de rede dentro do laboratório segmentado.">DHCP</span><span>DNS</span><span tabindex="0" data-tooltip="Routing — Regras de comunicação e roteamento entre os segmentos de rede do laboratório.">Routing</span></div></div></div></div></article>
+        </div>
       </div>
     </section>
 
     <section id="formacao" class="section grid-2 formation-section">
       <div class="section-heading reveal">
-        <p class="eyebrow">06 // FORMAÇÃO</p>
+        <p class="eyebrow">07 // FORMAÇÃO</p>
         <h2>Formação acadêmica + desenvolvimento contínuo.</h2>
       </div>
       <div class="body-copy reveal">
@@ -240,7 +405,7 @@ Fedora + AEGIS + Local AI
     </section>
 
     <section id="contato" class="section contact-section reveal">
-      <p class="eyebrow">07 // CONTATO</p>
+      <p class="eyebrow">08 // CONTATO</p>
       <h2>Vamos conversar?</h2>
       <p>Aberto a oportunidades em Suporte de TI, Field Service, Infraestrutura e Linux.</p>
       <div class="contact-links">
@@ -253,9 +418,23 @@ Fedora + AEGIS + Local AI
     </section>
   </main>
 
-  <footer>
-    <span>© 2026 Paulo Jefferson</span>
-    <span>Built for the field. Powered by curiosity.</span>
+  <footer class="portfolio-footer" aria-label="Rodapé e assinatura">
+    <div class="footer-signature">
+      <div class="signature-main">
+        <span class="signature-name">Paulo Jefferson</span>
+        <span class="signature-role">Suporte • Infraestrutura • Automação • IA</span>
+        <span class="signature-built">DESIGNED &amp; BUILT BY PAULO JEFFERSON // 2026</span>
+      </div>
+      <div class="signature-aegis" aria-label="AEGIS, personal AI environment">
+        <span class="aegis-orbit" aria-hidden="true">◉</span>
+        <div><strong>AEGIS</strong><small>PERSONAL AI ENVIRONMENT // ONLINE</small></div>
+      </div>
+    </div>
+    <div class="footer-meta">
+      <span>© 2026 Paulo Jefferson</span>
+      <span>Built for the field. Powered by curiosity.</span>
+    </div>
+    <p class="footer-a11y">Acessibilidade: navegação por teclado, foco visível, suporte a leitores de tela, contraste e redução de movimento.</p>
   </footer>
 
   <script src="script.js"></script>
