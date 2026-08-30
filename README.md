@@ -258,7 +258,7 @@ A **V2.7.3.pro** representa o estado atual do projeto. O visual e os recursos da
 **Paulo Jefferson da Silva**  
 Rio de Janeiro — RJ
 
-**E-mail:** paulojefferson89@gmail.com  
+**E-mail:** pjsolucoes3@gmail.com  
 **LinkedIn:** https://www.linkedin.com/in/paulo-j-silva  
 **GitHub:** https://github.com/PauloJeffersonX
 

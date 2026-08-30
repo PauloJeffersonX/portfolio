@@ -445,3 +445,11 @@ Por enquanto, a V2.7.3 representa bem o momento atual do portfólio. As próxima
 - A revisão `.pro` melhora manutenção e legibilidade do código sem representar uma nova identidade visual.
 
 **Estado atual:** V2.7.3.pro — projeto ativo e em evolução.
+
+
+### Ajuste de contato público — V2.7.3.pro
+
+- Removido o botão/link público de WhatsApp do portfólio para reduzir a exposição do número pessoal.
+- E-mail público do portfólio alterado para `pjsolucoes3@gmail.com`.
+- LinkedIn e GitHub permanecem como canais profissionais públicos.
+- README atualizado para utilizar o novo e-mail profissional.
