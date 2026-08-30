@@ -4,7 +4,7 @@ Portfólio profissional voltado para **Suporte de TI, Field Service, Infraestrut
 
 Atuo com suporte presencial e troubleshooting em ambiente corporativo e mantenho laboratórios próprios para colocar em prática Linux, Windows, redes, automação, containers e IA local.
 
-**Versão atual do portfólio: V2.7.3.pro**
+**Versão atual do portfólio: V2.7.3.pro.1**
 
 > O projeto continua em desenvolvimento e pode receber novos conteúdos, labs e melhorias conforme minha evolução profissional e técnica.
 
@@ -224,7 +224,10 @@ O portfólio possui melhorias práticas de acessibilidade, incluindo:
 - melhorias para `forced-colors`;
 - contraste entre elementos;
 - estrutura semântica;
-- interação por clique, toque e teclado nos componentes expansíveis.
+- interação por clique, toque e teclado nos componentes expansíveis;
+- nenhum conteúdo essencial depende exclusivamente de áudio;
+- informações e interações principais são apresentadas visualmente e em texto;
+- caso sejam adicionados vídeos ou áudios no futuro, a proposta é incluir legendas e/ou transcrição.
 
 O projeto busca seguir boas práticas alinhadas à **WCAG 2.2**, mas não é apresentado como formalmente certificado.
 
@@ -243,13 +246,13 @@ O site é publicado através do **GitHub Pages**.
 
 ## Histórico de desenvolvimento
 
-O desenvolvimento do portfólio foi feito em várias etapas até chegar à **V2.7.3**, mantendo apenas as decisões visuais e funcionais aprovadas. A revisão **V2.7.3.pro** mantém essa mesma base e reorganiza o CSS do projeto para facilitar manutenção e futuras alterações.
+O desenvolvimento do portfólio foi feito em várias etapas até chegar à **V2.7.3**, mantendo apenas as decisões visuais e funcionais aprovadas. A revisão **V2.7.3.pro** reorganizou o CSS do projeto para facilitar manutenção e futuras alterações. A **V2.7.3.pro.1** refina os CTAs, a seção de contato e a comunicação de acessibilidade.
 
 O histórico detalhado das alterações está disponível no arquivo:
 
 `HISTORICO_ATUALIZACOES_PORTFOLIO.md`
 
-A **V2.7.3.pro** representa o estado atual do projeto. O visual e os recursos da V2.7.3 foram preservados, enquanto o CSS passou a ser organizado em arquivos menores por responsabilidade. O portfólio continua ativo e pode receber novos projetos, experiências, laboratórios e melhorias conforme fizer sentido.
+A **V2.7.3.pro.1** representa o estado atual do projeto. O visual e os recursos da V2.7.3 foram preservados, enquanto o CSS passou a ser organizado em arquivos menores por responsabilidade. O portfólio continua ativo e pode receber novos projetos, experiências, laboratórios e melhorias conforme fizer sentido.
 
 ---
 

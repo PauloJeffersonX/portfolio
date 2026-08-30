@@ -453,3 +453,22 @@ Por enquanto, a V2.7.3 representa bem o momento atual do portfólio. As próxima
 - E-mail público do portfólio alterado para `pjsolucoes3@gmail.com`.
 - LinkedIn e GitHub permanecem como canais profissionais públicos.
 - README atualizado para utilizar o novo e-mail profissional.
+
+
+---
+
+## V2.7.3.pro.1 — Refinamento profissional e acessibilidade
+
+- Mantida a identidade visual e funcional aprovada da V2.7.3.pro.
+- CTA principal alterado de `Conheça meu trabalho` para `Ver projetos e laboratórios`.
+- CTA do currículo alterado de `Baixar currículo` para `Baixar CV em PDF`.
+- Seção `Vamos conversar?` alterada para `Entre em contato`.
+- Texto de contato revisado para linguagem mais profissional e objetiva, com foco em Suporte de TI, Field Service e Infraestrutura.
+- Mantidos LinkedIn, GitHub e o e-mail profissional `pjsolucoes3@gmail.com` como canais públicos.
+- WhatsApp/telefone continuam fora do site público.
+- Comunicação de acessibilidade ampliada para deixar explícito que o conteúdo essencial não depende de áudio.
+- Informações e interações principais permanecem disponíveis visualmente e em texto.
+- Para eventual conteúdo multimídia futuro, fica registrada a diretriz de utilizar legendas e/ou transcrição.
+- README atualizado em conjunto com o histórico.
+
+**Estado atual:** V2.7.3.pro.1 — projeto ativo e em evolução.
