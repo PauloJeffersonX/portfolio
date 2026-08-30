@@ -363,3 +363,39 @@ body.game-mode-open { overflow: hidden; }
   background-size: 100% 4px;
   opacity: .35;
 }
+
+
+/* V2.7.3 — refinamento mobile: indicadores profissionais + citação responsiva */
+@media (max-width: 560px) {
+  .hero-quote.section {
+    display: block;
+    width: auto;
+    max-width: none;
+    margin-left: 22px;
+    margin-right: 22px;
+    padding: 18px 20px !important;
+  }
+  .hero-quote .quote-mark { display: none; }
+  .hero-quote p {
+    display: block;
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    font-size: .76rem;
+    line-height: 1.65;
+    overflow-wrap: normal;
+    word-break: normal;
+    white-space: normal;
+  }
+  .hero-quote > div {
+    display: block;
+    width: 100%;
+    margin-top: 14px;
+    padding: 13px 0 0;
+    border-left: 0;
+    border-top: 1px solid rgba(255,255,255,.08);
+  }
+  .hero-quote strong { font-size: .72rem; }
+  .hero-quote small { margin-top: 5px; font-size: .68rem; line-height: 1.5; }
+}
+html[data-theme="light"] .hero-quote > div { border-top-color: rgba(15,45,58,.10); }
