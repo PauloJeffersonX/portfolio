@@ -344,12 +344,6 @@ O histórico é encerrado na **V2.7.3**, versão final escolhida como base.
   - Rodapé compacto Paulo Jefferson // AEGIS.
 
 
-### Refinamento do conteúdo profissional
-
-- Seção **Sobre** reescrita para apresentar melhor a trajetória profissional, experiência prática e evolução para Infraestrutura e Administração de Sistemas.
-- Título atualizado para **“Experiência prática. Evolução contínua.”**
-- Inclusão da evolução entre suporte, laboratórios de infraestrutura, automação, IA local e roadmap técnico, sem transformar a seção em uma lista de tecnologias.
-
 ### AEGIS Game Mode / Easter Egg
 
 - Inclusão de um easter egg interativo sem alterar a proposta profissional do portfólio.
@@ -380,11 +374,44 @@ O histórico é encerrado na **V2.7.3**, versão final escolhida como base.
 
 ---
 
-# Estado final
+---
 
-**Versão final: V2.7.3**
+## V2.7.3.pro — Organização estrutural do CSS
 
-A V2.7.3 foi escolhida como base final por oferecer o melhor equilíbrio entre:
+- Mantida a **V2.7.3** como base visual e funcional do portfólio.
+- A revisão `.pro` foi criada para melhorar a organização interna do projeto sem alterar a identidade visual aprovada.
+- O antigo `styles.css`, que concentrava grande parte das regras de estilo em um único arquivo, foi transformado em um arquivo de entrada mais curto.
+- As regras CSS passaram a ser separadas por responsabilidade dentro da pasta `css/`.
+- Estrutura adotada:
+  - `01-core.css` — estilos-base e estrutura principal.
+  - `02-projects-roadmap.css` — Projects & Labs e Roadmap.
+  - `03-hero-theme.css` — hero e temas.
+  - `04-accessibility-tooltips.css` — acessibilidade e tooltips.
+  - `05-infrastructure-ai.css` — seções de infraestrutura e IA.
+  - `06-hero-final.css` — ajustes finais do hero.
+  - `07-accordions.css` — componentes expansíveis.
+  - `08-footer-final.css` — rodapé.
+  - `09-game-mode.css` — AEGIS Game Mode e minigames.
+- O `styles.css` passou a importar esses módulos em ordem definida, preservando a cascata do CSS e o comportamento visual existente.
+- Adicionado `README.md` dentro da pasta `css/` para documentar a finalidade de cada módulo e facilitar futuras manutenções.
+- Preservados:
+  - layout responsivo;
+  - tema claro/escuro;
+  - acessibilidade;
+  - tooltips;
+  - Projects & Labs expansíveis;
+  - Roadmap expansível;
+  - AEGIS Game Mode;
+  - Neon Breakout;
+  - Signal Dodge.
+- A mudança é principalmente de **organização, manutenção e legibilidade do código**, sem transformar a `.pro` em uma nova versão visual do portfólio.
+
+# Estado atual
+
+**Base visual: V2.7.3**  
+**Revisão estrutural atual: V2.7.3.pro**
+
+A V2.7.3 continua sendo a base visual escolhida por oferecer o melhor equilíbrio entre:
 
 - identidade visual;
 - leitura profissional;
@@ -400,30 +427,11 @@ O portfólio permanece preparado para publicação via **GitHub Pages**, utiliza
 
 ## E daqui para frente?
 
-A **V2.7.3** é a versão que escolhi para fechar esta etapa do portfólio, mas o projeto não termina aqui.
+A **V2.7.3** continua sendo a base visual escolhida para esta etapa do portfólio. A revisão **V2.7.3.pro** organiza melhor a estrutura interna do projeto sem mudar a identidade aprovada.
 
 A ideia é continuar mexendo nele aos poucos, conforme eu for aprendendo coisas novas, colocando novos projetos em prática e ganhando mais experiência na área. Então é bem provável que apareçam novos labs, tecnologias, projetos, recursos interativos e também ajustes no próprio visual do site.
 
-Por enquanto, a V2.7.3 representa bem o momento atual do portfólio. As próximas mudanças entram quando realmente tiver algo novo que faça sentido mostrar.
+Por enquanto, a V2.7.3.pro representa o estado atual do projeto, mantendo a aparência da V2.7.3 com uma base de código mais organizada. As próximas mudanças entram quando realmente tiver algo novo que faça sentido mostrar.
 
 **Status:** projeto ativo e em evolução.
 
-
-### Refinamento profissional e mobile — V2.7.3
-
-- Substituição do indicador **PJ / MEI** por **INFRA**, priorizando competência técnica na apresentação inicial.
-- Novo indicador: **INFRA — Infraestrutura de TI — Windows • Linux • Redes**.
-- Correção do bloco de citação em telas pequenas, evitando quebra excessiva de palavras e sobreposição entre frase, assinatura e complemento.
-- Desktop preservado; ajuste direcionado ao breakpoint mobile.
-- Mantidos AEGIS Game Mode, Neon Breakout, Signal Dodge e demais recursos da V2.7.3.
-
-
-### Priorização dos indicadores profissionais — V2.7.3
-
-- Reorganização dos cinco indicadores do hero por prioridade profissional: **Experiência → Suporte → Infraestrutura → Automação → IA Local**.
-- Remoção da redundância entre os antigos indicadores **INFRA** e **LAB**.
-- **880+** passa a destacar experiência prática em suporte técnico e Field Service.
-- **SUPORTE** destaca N1/N2, Windows, hardware e redes.
-- **INFRA** concentra laboratório prático com Linux, Docker e Homelab.
-- **AUTOMAÇÃO** destaca Bash, PowerShell, Python, rotinas e produtividade.
-- **IA LOCAL** permanece como diferencial técnico com AEGIS, Ollama e LLMs.
