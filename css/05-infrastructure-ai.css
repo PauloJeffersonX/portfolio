@@ -1,0 +1,30 @@
+/* V2.6.2 — Private Cloud architecture strip */
+.infra-flow{display:flex;align-items:center;flex-wrap:wrap;gap:7px;margin:18px 0 4px;padding:11px 12px;border:1px solid rgba(25,216,255,.12);border-radius:8px;background:rgba(25,216,255,.025);font:600 .62rem "JetBrains Mono",monospace;color:#8ca3ad;letter-spacing:.045em}
+.infra-flow span{color:#b8ccd4}.infra-flow i{font-style:normal;color:var(--cyan);opacity:.72}
+html[data-theme="light"] .infra-flow{background:rgba(0,127,157,.035);border-color:rgba(0,127,157,.16)}
+@media(max-width:540px){.infra-flow{font-size:.57rem;gap:5px}}
+
+/* V2.6.4 — AEGIS + Local AI Lab */
+.aegis-copy strong{color:#dff9ff}
+.aegis-flow{display:flex;align-items:center;flex-wrap:wrap;gap:7px;margin:22px 0 18px;padding:11px 12px;border:1px solid rgba(25,216,255,.12);border-radius:8px;background:rgba(25,216,255,.025);font:600 .62rem "JetBrains Mono",monospace;letter-spacing:.045em;color:#9fb4bd}
+.aegis-flow span{color:#bdd0d8}.aegis-flow i{font-style:normal;color:var(--cyan);opacity:.75}
+.aegis-capabilities{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin-top:18px}
+.aegis-capabilities div{padding:13px 14px;border:1px solid rgba(255,255,255,.065);border-radius:9px;background:rgba(255,255,255,.018)}
+.aegis-capabilities b{display:block;color:var(--cyan);font:600 .64rem "JetBrains Mono",monospace;letter-spacing:.08em;margin-bottom:4px}
+.aegis-capabilities span{display:block;color:#8fa4ae;font-size:.77rem;line-height:1.45}
+.aegis-stats [data-tooltip]{cursor:help}
+.aegis-stats [data-tooltip]:hover,.aegis-stats [data-tooltip]:focus-visible{border-left-color:rgba(25,216,255,.55);background:linear-gradient(90deg,rgba(25,216,255,.035),transparent)}
+.lab-section .projects-intro{max-width:900px;color:var(--muted)}
+.ai-lab-focus{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:18px}
+.ai-lab-focus article{display:grid;grid-template-columns:42px 1fr;gap:13px;align-items:start;padding:18px;border:1px solid rgba(255,255,255,.07);border-radius:11px;background:rgba(10,14,18,.68)}
+.ai-lab-focus article>span{font:700 .68rem "JetBrains Mono",monospace;color:var(--cyan);padding-top:2px}
+.ai-lab-focus b{display:block;font:600 .69rem "JetBrains Mono",monospace;color:#d6f6fc;letter-spacing:.065em;margin-bottom:5px}
+.ai-lab-focus p{margin:0;color:var(--muted);font-size:.82rem;line-height:1.5}
+.ai-lab-tags{margin-top:18px}
+html[data-theme="light"] .aegis-flow{background:rgba(0,127,157,.035);border-color:rgba(0,127,157,.16)}
+html[data-theme="light"] .aegis-capabilities div,html[data-theme="light"] .ai-lab-focus article{background:rgba(255,255,255,.6);border-color:rgba(8,38,50,.10)}
+html[data-theme="light"] .aegis-capabilities span,html[data-theme="light"] .ai-lab-focus p{color:#5b707a}
+html[data-theme="light"] .ai-lab-focus b{color:#15313d}
+@media(max-width:760px){.aegis-capabilities,.ai-lab-focus{grid-template-columns:1fr}.aegis-flow{font-size:.57rem}}
+
+

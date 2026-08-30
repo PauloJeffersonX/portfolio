@@ -1,0 +1,78 @@
+/* V2.7.1 — rodapé compacto Paulo Jefferson // AEGIS */
+.portfolio-footer{display:block!important;padding:0!important;border-top:1px solid var(--line)!important;background:linear-gradient(180deg,rgba(7,11,14,.16),rgba(4,8,11,.72));}
+.footer-identity{max-width:1180px;margin:0 auto;padding:20px 34px 10px;display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:10px 18px;font-family:"JetBrains Mono",monospace}
+.footer-brandline{display:flex;align-items:center;gap:10px;font-size:.64rem;letter-spacing:.07em;color:var(--muted);white-space:nowrap}
+.footer-owner strong{color:var(--text);font-weight:700}
+.footer-separator{color:var(--cyan);opacity:.85}
+.footer-aegis{display:inline-flex;align-items:center;gap:6px;color:var(--cyan);letter-spacing:.12em}
+.footer-aegis strong{color:var(--text);font-weight:700}
+.footer-tagline{font-size:.54rem;letter-spacing:.11em;color:var(--muted);opacity:.78}
+.footer-motto{justify-self:end;font-size:.56rem;color:var(--muted);white-space:nowrap}
+.portfolio-footer .footer-a11y{max-width:1180px;margin:0 auto!important;padding:0 34px 16px!important;text-align:left!important;font-size:.54rem!important;color:var(--muted)!important;opacity:.58}
+html[data-theme="light"] .portfolio-footer{background:linear-gradient(180deg,rgba(255,255,255,.12),rgba(232,242,246,.62))}
+@media(max-width:800px){.footer-identity{grid-template-columns:1fr;padding:18px 22px 9px;gap:7px}.footer-brandline{white-space:normal}.footer-motto{justify-self:start}.portfolio-footer .footer-a11y{padding:0 22px 15px!important}}
+
+/* V2.7.2 — hero mais alto na viewport: menos vazio no topo e conteúdo inferior antecipado */
+@media(min-width:901px){
+  .hero.section{
+    padding-top:34px;
+    padding-bottom:30px;
+    align-items:center;
+  }
+  .hero .availability{margin-bottom:10px}
+  .hero h1{
+    margin:16px 0 22px;
+    font-size:clamp(4rem,7.7vw,7rem);
+  }
+  .hero .lead{margin-bottom:10px}
+  .hero .intro{margin-top:0}
+  .hero-actions{margin:20px 0 16px}
+  .hero-tags{margin-top:12px}
+  .hero-signal{transform:translateY(-4px)}
+  .signal-line{padding:15px 0}
+  .signal-status{margin-top:15px}
+}
+
+/* aproxima métricas/citação do hero sem comprimir demais a leitura */
+.hero-metrics.section{padding-top:0;padding-bottom:8px}
+.hero-quote.section{margin-top:0}
+#sobre.section{padding-top:72px}
+
+@media(max-width:900px){
+  .hero.section{padding-top:34px;padding-bottom:26px}
+  #sobre.section{padding-top:64px}
+}
+@media(max-width:560px){
+  .hero.section{padding-top:28px;padding-bottom:24px}
+  #sobre.section{padding-top:56px}
+}
+
+/* V2.7.3 — primeira tela ainda mais compacta */
+@media(min-width:901px){
+  .hero.section{padding-top:20px;padding-bottom:18px;gap:48px;min-height:auto}
+  .hero .availability{margin-bottom:7px;padding:5px 9px}
+  .hero h1{font-size:clamp(3.8rem,7.15vw,6.55rem);margin:12px 0 17px}
+  .hero .lead{font-size:clamp(1.28rem,2.25vw,2rem);margin-bottom:8px}
+  .hero .intro{font-size:.94rem;line-height:1.5}
+  .hero-actions{margin:16px 0 12px}
+  .hero-actions .btn{padding:11px 16px}
+  .hero-tags{margin-top:9px;gap:6px}
+  .hero-tags span{padding:5px 8px;font-size:.68rem}
+  .hero-signal{transform:translateY(-8px)}
+  .signal-line{padding:12px 0}
+  .signal-status{margin-top:11px}
+}
+.hero-metrics.section{padding-bottom:5px}
+.metric-card{min-height:96px;padding:16px 20px;gap:12px}
+.metric-icon{min-width:30px;height:30px}
+.metric-card strong{font-size:1.22rem}
+.metric-card b{margin-top:5px;font-size:.71rem}
+.metric-card small{margin-top:3px;font-size:.64rem}
+.hero-quote.section{padding:10px 24px!important;gap:15px}
+.quote-mark{font-size:2.1rem}
+.hero-quote p{font-size:.7rem;line-height:1.42}
+#sobre.section{padding-top:58px}
+@media(max-width:900px){#sobre.section{padding-top:56px}}
+@media(max-width:560px){#sobre.section{padding-top:50px}}
+
+
