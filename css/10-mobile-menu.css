@@ -1,0 +1,71 @@
+/* V2.7.3.pro.2 — refinamento do menu mobile
+   Mantém o drawer lateral, mas o posiciona como um painel preso ao header,
+   com respiro das bordas e altura limitada à viewport. */
+
+@media (max-width: 900px) {
+  .header-wrap nav {
+    top: 72px;
+    right: 12px;
+    width: min(86vw, 340px);
+    height: auto;
+    max-height: calc(100dvh - 88px);
+    padding: 12px;
+    overflow-y: auto;
+
+    border: 1px solid rgba(25, 216, 255, .16);
+    border-radius: 14px;
+    background: rgba(6, 9, 12, .98);
+    box-shadow: 0 22px 60px rgba(0, 0, 0, .42);
+    backdrop-filter: blur(22px);
+
+    transform: translateX(calc(100% + 28px));
+    transition: transform .28s ease;
+  }
+
+  .header-wrap nav.open {
+    right: 12px;
+    transform: translateX(0);
+  }
+
+  .header-wrap nav a {
+    width: 100%;
+    padding: 12px 14px;
+    border-bottom: 0;
+    border-radius: 9px;
+  }
+
+  .header-wrap nav a + a {
+    margin-top: 2px;
+  }
+
+  .header-wrap nav a:hover,
+  .header-wrap nav a:focus-visible,
+  .header-wrap nav a.active {
+    background: rgba(25, 216, 255, .07);
+  }
+
+  .header-wrap nav a.active::after {
+    display: none;
+  }
+}
+
+@media (max-width: 540px) {
+  .header-wrap nav {
+    top: 68px;
+    right: 10px;
+    width: calc(100vw - 20px);
+    max-height: calc(100dvh - 80px);
+    padding: 10px;
+    border-radius: 13px;
+  }
+
+  .header-wrap nav.open {
+    right: 10px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .header-wrap nav {
+    transition: none;
+  }
+}

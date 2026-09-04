@@ -1,27 +1,27 @@
 # Paulo Jefferson — Portfólio Profissional
 
-Portfólio profissional voltado para **Suporte de TI, Field Service, Infraestrutura, Automação e laboratórios técnicos**.
+Portfólio pessoal/profissional onde reúno minha experiência com **Suporte de TI e Field Service** e alguns projetos que mantenho para estudar **Linux, infraestrutura, automação e IA local**.
 
-Atuo com suporte presencial e troubleshooting em ambiente corporativo e mantenho laboratórios próprios para colocar em prática Linux, Windows, redes, automação, containers e IA local.
+Trabalho com suporte técnico presencial no Rio de Janeiro e já passei de 880 atendimentos. Fora da rotina de chamados, mantenho laboratórios próprios para testar Linux, Windows, redes, Docker, automação e IA local.
 
-**Versão atual do portfólio: V2.7.3.pro.1**
+**Versão atual do portfólio: V2.7.3.pro.2**
 
-> O projeto continua em desenvolvimento e pode receber novos conteúdos, labs e melhorias conforme minha evolução profissional e técnica.
+> O portfólio continua em desenvolvimento e vai mudando conforme eu termino novos projetos, aprendo coisas novas ou encontro uma forma melhor de apresentar o que já faço.
 
 ## Portfólio online
 
-**GitHub Pages:**  
-https://paulojeffersonx.github.io/portfolio/
+**Site:**  
+https://paulojeffersonx.vercel.app/
 
 ---
 
 ## Sobre
 
-Sou **Tecnólogo em Análise e Desenvolvimento de Sistemas** e atuo como **Técnico de Suporte de TI / Field Service**, prestando atendimento em campo no Rio de Janeiro.
+Sou **Tecnólogo em Análise e Desenvolvimento de Sistemas** e trabalho com **Suporte de TI / Field Service** no Rio de Janeiro.
 
-Minha experiência envolve suporte N1/N2, diagnóstico de hardware e software, Windows e Linux, redes TCP/IP/LAN, PDVs, impressoras, periféricos, infraestrutura local e atendimento dentro de SLA.
+No dia a dia, atendo usuários e equipamentos, faço diagnóstico de hardware e software e lido com Windows, Linux, redes, PDVs, impressoras, periféricos e conectividade.
 
-Além da rotina profissional, mantenho um ambiente próprio de estudos e testes. Uso esses laboratórios para aprender na prática, testar soluções, automatizar tarefas e documentar o que funciona.
+Além do trabalho, mantenho meus próprios labs. É onde testo soluções com calma, automatizo algumas tarefas e documento o que funcionou para conseguir repetir depois.
 
 ---
 
@@ -252,7 +252,7 @@ O histórico detalhado das alterações está disponível no arquivo:
 
 `HISTORICO_ATUALIZACOES_PORTFOLIO.md`
 
-A **V2.7.3.pro.1** representa o estado atual do projeto. O visual e os recursos da V2.7.3 foram preservados, enquanto o CSS passou a ser organizado em arquivos menores por responsabilidade. O portfólio continua ativo e pode receber novos projetos, experiências, laboratórios e melhorias conforme fizer sentido.
+A **V2.7.3.pro.2** representa o estado atual do projeto. O visual e os recursos da V2.7.3 foram preservados, enquanto o CSS passou a ser organizado em arquivos menores por responsabilidade. O portfólio continua ativo e pode receber novos projetos, experiências, laboratórios e melhorias conforme fizer sentido.
 
 ---
 
@@ -275,3 +275,19 @@ Rio de Janeiro — RJ
 <p align="center">
   <em>Built for the field. Powered by curiosity.</em>
 </p>
+
+
+---
+
+## Revisão V2.7.3.pro.3
+
+Esta revisão mexe principalmente na forma de contar o conteúdo do portfólio. Os projetos, recursos, Game Mode, responsividade, acessibilidade e estrutura modular do CSS foram mantidos.
+
+- textos reescritos em linguagem mais direta e pessoal;
+- remoção de frases genéricas e excesso de linguagem promocional;
+- experiência profissional ajustada para separar o trabalho atual como prestador de serviços dos clientes e plataformas atendidas;
+- cargos anteriores apresentados pelos cargos formais, sem transformar apoio informal em título profissional de TI;
+- projetos descritos pelo que foi montado, testado e usado na prática;
+- URL principal atualizada para a publicação na Vercel;
+- AEGIS mantido com 22 Tools e 96 Skills;
+- AEGIS Game Mode, Neon Breakout, Signal Dodge e pistas preservados.

@@ -12,4 +12,6 @@ O `styles.css` da raiz é o ponto de entrada do portfólio e importa os módulos
 - `08-footer-final.css` — rodapé e compactação final da V2.7.3.
 - `09-game-mode.css` — AEGIS Game Mode, pistas, minigames e refinamentos mobile finais.
 
+- `10-mobile-menu.css` — refinamento final do posicionamento e comportamento visual do menu em celulares/tablets.
+
 > A ordem dos `@import` deve ser mantida, pois faz parte da cascata aprovada da V2.7.3.

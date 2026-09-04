@@ -1,7 +1,8 @@
 # Histórico de Atualizações — Portfólio Paulo Jefferson
 
-Este documento registra apenas as versões e alterações que permaneceram aprovadas no desenvolvimento do portfólio.  
-O histórico é encerrado na **V2.7.3**, versão final escolhida como base.
+Aqui fui registrando as mudanças que realmente ficaram no portfólio ao longo do projeto. Não é um log de cada tentativa: entram só as versões e ajustes que fizeram parte da evolução do site.
+
+A **V2.7.3** virou a base principal e, depois dela, continuei fazendo pequenos refinamentos na linha `.pro`, sem jogar fora o que já estava funcionando.
 
 ---
 
@@ -472,3 +473,44 @@ Por enquanto, a V2.7.3 representa bem o momento atual do portfólio. As próxima
 - README atualizado em conjunto com o histórico.
 
 **Estado atual:** V2.7.3.pro.1 — projeto ativo e em evolução.
+
+
+---
+
+## V2.7.3.pro.2 — Refinamento do menu mobile
+
+- Mantida a identidade visual e funcional da V2.7.3.pro.1.
+- Corrigido o posicionamento do menu de navegação em telas menores.
+- O menu continua entrando lateralmente, porém agora abre como um painel alinhado ao cabeçalho, com margem das bordas da tela.
+- Largura ajustada para celulares e tablets, evitando aparência de menu “colado” ou deslocado.
+- Altura limitada à viewport com rolagem interna quando necessário.
+- Adicionados borda, raio e sombra coerentes com o restante da interface.
+- Links ganharam área de toque mais equilibrada e estados de foco/hover mais claros.
+- Mantido suporte a teclado, `Escape`, `aria-expanded` e `prefers-reduced-motion`.
+- README e documentação da estrutura CSS atualizados.
+
+**Estado atual:** V2.7.3.pro.2 — projeto ativo e em evolução.
+
+
+---
+
+## V2.7.3.pro.3 — Textos mais naturais
+
+Essa revisão não nasceu para mudar o visual do site. A ideia foi mexer justamente no que estava me incomodando: alguns textos estavam com cara de apresentação pronta demais e não pareciam muito com a forma como eu realmente contaria minha experiência.
+
+O que mudou:
+
+- Reescrevi o hero para chegar mais rápido ao ponto e explicar o que faço sem tanta frase de efeito.
+- O **Sobre mim** passou para primeira pessoa e ficou mais próximo da minha rotina: suporte em campo, resolução de problemas e os laboratórios que mantenho em casa para continuar estudando.
+- Corrigi a experiência atual para deixar clara a relação profissional: atuo pela **PJ Soluções em TI** como prestador de serviços e hoje realizo atendimentos por meio da FindUP e da Positivo S+.
+- Mantive a Cencosud como uma das operações atendidas, sem dar a entender que existe vínculo direto com a empresa.
+- Na Electrolux e na Pingon, voltei a usar os cargos reais — **Almoxarife I** e **Assistente de Compras** — em vez de tentar puxar essas experiências para TI.
+- Reescrevi os projetos contando mais o que eu montei, uso, testei e aprendi. Isso vale para o Private Cloud, automação em PowerShell, Fedora, Windows, Local AI, Batocera e AEGIS.
+- Cortei parte das frases promocionais, slogans e textos que pareciam estar tentando “vender” demais o portfólio.
+- O AEGIS continua no projeto com os números atuais de **22 Tools e 96 Skills**, mas sem transformar isso no centro da apresentação.
+- O que ainda está em estudo continua aparecendo como estudo ou roadmap. Não transformei tecnologia planejada em experiência profissional.
+- Atualizei a referência principal do site para `paulojeffersonx.vercel.app`.
+
+Por baixo, continuei usando a estrutura da **V2.7.3.pro.2**. Menu mobile, tema claro/escuro, CSS modular, acessibilidade, projetos expansíveis, roadmap e o AEGIS Game Mode continuam no projeto.
+
+**Status:** essa é a versão que melhor representa o portfólio hoje, mas ele continua em construção e vai mudar conforme eu tiver projetos e experiências novas que realmente façam sentido colocar aqui.
