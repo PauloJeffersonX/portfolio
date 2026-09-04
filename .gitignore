@@ -1,8 +1,17 @@
-node_modules
+# Dependências
+node_modules/
+
+# Variáveis de ambiente
 .env
-__pycache__
-.venv
-venv
+
+# Python
+__pycache__/
+.venv/
+venv/
+
+# Arquivos do sistema
 .DS_Store
 Thumbs.db
+
+# Logs
 *.log
