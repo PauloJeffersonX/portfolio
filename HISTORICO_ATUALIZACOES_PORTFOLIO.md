@@ -530,5 +530,6 @@ O que foi ajustado:
 - A área do jogo foi ajustada para telas menores, com controles mais compactos e melhor aproveitamento da largura.
 - Em celulares bem estreitos, HUD, canvas e textos de ajuda receberam ajustes extras para evitar sobreposição e cortes.
 - O comportamento no desktop foi mantido.
+- `robots.txt` e `sitemap.xml` foram atualizados para usar o domínio atual `paulojeffersonx.vercel.app` no lugar do endereço antigo do GitHub Pages.
 
-**Status:** correção focada no uso mobile, sem mudança no conteúdo do portfólio.
+**Status:** correção focada no uso mobile, com atualização dos arquivos de indexação do site.

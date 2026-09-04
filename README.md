@@ -252,7 +252,7 @@ O histórico detalhado das alterações está disponível no arquivo:
 
 `HISTORICO_ATUALIZACOES_PORTFOLIO.md`
 
-A **V2.7.3.pro.2** representa o estado atual do projeto. O visual e os recursos da V2.7.3 foram preservados, enquanto o CSS passou a ser organizado em arquivos menores por responsabilidade. O portfólio continua ativo e pode receber novos projetos, experiências, laboratórios e melhorias conforme fizer sentido.
+A **V2.7.3.pro.4** representa o estado atual do projeto. O visual e os recursos da V2.7.3 foram preservados, enquanto o CSS passou a ser organizado em arquivos menores por responsabilidade. O portfólio continua ativo e pode receber novos projetos, experiências, laboratórios e melhorias conforme fizer sentido.
 
 ---
 
@@ -291,3 +291,8 @@ Esta revisão mexe principalmente na forma de contar o conteúdo do portfólio. 
 - URL principal atualizada para a publicação na Vercel;
 - AEGIS mantido com 22 Tools e 96 Skills;
 - AEGIS Game Mode, Neon Breakout, Signal Dodge e pistas preservados.
+
+
+## Revisão V2.7.3.pro.4
+
+Correção do AEGIS Game Mode no celular, evitando conflito com o menu mobile e ajustando a interface do jogo em telas menores. Também foram atualizados `robots.txt` e `sitemap.xml` para apontar para o domínio atual `paulojeffersonx.vercel.app`.
