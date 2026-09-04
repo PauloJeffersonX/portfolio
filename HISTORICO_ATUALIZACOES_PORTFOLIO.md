@@ -514,3 +514,21 @@ O que mudou:
 Por baixo, continuei usando a estrutura da **V2.7.3.pro.2**. Menu mobile, tema claro/escuro, CSS modular, acessibilidade, projetos expansíveis, roadmap e o AEGIS Game Mode continuam no projeto.
 
 **Status:** essa é a versão que melhor representa o portfólio hoje, mas ele continua em construção e vai mudar conforme eu tiver projetos e experiências novas que realmente façam sentido colocar aqui.
+
+
+---
+
+## V2.7.3.pro.4 — Correção do Game Mode no celular
+
+Essa atualização corrige um problema que aparecia no celular ao abrir o AEGIS Game Mode: o menu normal do site podia continuar aberto e ficar por cima da interface do jogo.
+
+O que foi ajustado:
+
+- Ao entrar no Game Mode, o menu mobile é fechado automaticamente.
+- Enquanto o jogo estiver aberto, o botão do menu fica desativado e o cabeçalho normal do site sai da interface.
+- Ao fechar o Game Mode, o menu volta a funcionar normalmente.
+- A área do jogo foi ajustada para telas menores, com controles mais compactos e melhor aproveitamento da largura.
+- Em celulares bem estreitos, HUD, canvas e textos de ajuda receberam ajustes extras para evitar sobreposição e cortes.
+- O comportamento no desktop foi mantido.
+
+**Status:** correção focada no uso mobile, sem mudança no conteúdo do portfólio.

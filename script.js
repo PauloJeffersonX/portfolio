@@ -42,6 +42,7 @@ function closeMenu(returnFocus=false){
   if(returnFocus) menuBtn?.focus();
 }
 menuBtn?.addEventListener('click',()=>{
+  if(document.body.classList.contains('game-mode-open')) return;
   const open = nav.classList.toggle('open');
   menuBtn.setAttribute('aria-expanded',String(open));
   menuBtn.setAttribute('aria-label',open ? 'Fechar menu de navegação' : 'Abrir menu de navegação');
@@ -499,6 +500,8 @@ document.querySelectorAll('[data-tooltip]').forEach((el, index) => {
 
   function openGame() {
     lastFocus=document.activeElement;
+    closeMenu(false);
+    menuBtn?.setAttribute('disabled','');
     overlay.hidden=false;
     document.body.classList.add('game-mode-open');
     resetGame();
@@ -510,6 +513,7 @@ document.querySelectorAll('[data-tooltip]').forEach((el, index) => {
     stopGame();
     overlay.hidden=true;
     document.body.classList.remove('game-mode-open');
+    menuBtn?.removeAttribute('disabled');
     leftPressed=rightPressed=false;
     if(lastFocus && typeof lastFocus.focus==='function')lastFocus.focus();
   }

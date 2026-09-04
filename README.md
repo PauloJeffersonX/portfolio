@@ -4,7 +4,7 @@ Portfólio pessoal/profissional onde reúno minha experiência com **Suporte de 
 
 Trabalho com suporte técnico presencial no Rio de Janeiro e já passei de 880 atendimentos. Fora da rotina de chamados, mantenho laboratórios próprios para testar Linux, Windows, redes, Docker, automação e IA local.
 
-**Versão atual do portfólio: V2.7.3.pro.2**
+**Versão atual do portfólio: V2.7.3.pro.4**
 
 > O portfólio continua em desenvolvimento e vai mudando conforme eu termino novos projetos, aprendo coisas novas ou encontro uma forma melhor de apresentar o que já faço.
 

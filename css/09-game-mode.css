@@ -216,12 +216,54 @@
 
 body.game-mode-open { overflow: hidden; }
 
+/* Enquanto o Game Mode estiver aberto, o menu normal do site fica fora da interface.
+   Isso evita a sobreposição do drawer mobile com os controles do jogo. */
+body.game-mode-open .header-wrap {
+  visibility: hidden;
+  pointer-events: none;
+}
+
+body.game-mode-open .game-overlay {
+  visibility: visible;
+  pointer-events: auto;
+}
+
+
 @media (max-width: 620px) {
-  .game-overlay { padding: 10px; }
-  .game-shell { padding: 14px; border-radius: 12px; max-height: calc(100vh - 20px); }
-  .game-canvas { min-height: 220px; }
-  .game-system { font-size: .65rem; }
-  .game-help { line-height: 1.65; }
+  .game-overlay {
+    padding: 8px;
+    align-items: center;
+  }
+  .game-shell {
+    width: 100%;
+    max-width: 100%;
+    padding: 12px;
+    border-radius: 12px;
+    max-height: calc(100dvh - 16px);
+    overscroll-behavior: contain;
+  }
+  .game-topbar { gap: 10px; }
+  .game-topbar h2 { font-size: 1.18rem; }
+  .game-kicker { font-size: .64rem; letter-spacing: .11em; }
+  .game-close { width: 40px; height: 40px; flex-basis: 40px; }
+  .game-stage-wrap { aspect-ratio: 10 / 8; }
+  .game-canvas { min-height: 210px; }
+  .game-system { gap: 6px 12px; font-size: .62rem; padding: 8px 9px; }
+  .game-hud { flex-wrap: wrap; gap: 6px 12px; font-size: .68rem; }
+  .game-controls { gap: 7px; }
+  .game-control { min-width: 0; flex: 1 1 0; padding: 0 10px; }
+  .game-control-center { flex: 1.25 1 0; min-width: 0; }
+  .game-help { line-height: 1.55; font-size: .68rem; }
+}
+
+@media (max-width: 390px) {
+  .game-overlay { padding: 5px; }
+  .game-shell { padding: 9px; max-height: calc(100dvh - 10px); }
+  .game-system { display: grid; grid-template-columns: 1fr 1fr; }
+  .game-stage-wrap { aspect-ratio: 1 / 1; }
+  .game-canvas { min-height: 200px; }
+  .game-help { margin-top: 8px; }
+  .game-secret { display: none; }
 }
 
 @media (prefers-reduced-motion: reduce) {
