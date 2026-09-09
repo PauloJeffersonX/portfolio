@@ -533,3 +533,22 @@ O que foi ajustado:
 - `robots.txt` e `sitemap.xml` foram atualizados para usar o domínio atual `paulojeffersonx.vercel.app` no lugar do endereço antigo do GitHub Pages.
 
 **Status:** correção focada no uso mobile, com atualização dos arquivos de indexação do site.
+
+
+---
+
+## V2.7.3.pro.4 — Opiniões privadas e formulário compacto
+
+Complemento da versão atual, sem alteração do número de versão nem do AEGIS Game Mode.
+
+- Adicionada a seção **09 // SUA OPINIÃO**, após Contato e antes das pistas e do rodapé.
+- Nome opcional e opinião ou sugestão obrigatória, com limite de **1.000 caracteres**.
+- Integração Formspree Vanilla JS (AJAX) via CDN, com recebimento privado por e-mail confirmado em teste real pelo responsável pelo portfólio.
+- Estados de envio, sucesso e erro; limpeza dos campos somente após sucesso.
+- CSS e JavaScript isolados em `css/11-opinion.css` e `opinion.js`.
+- Reduzidos espaçamento vertical, título, padding do card, campo Nome, altura inicial do textarea e botão, mantendo áreas de interação de pelo menos 44 px.
+- Preservados temas claro/escuro, responsividade, rótulos, foco visível e mensagens acessíveis.
+- Teclado dos novos campos isolado do Konami Code, sem editar o código dos jogos.
+- README atualizado para registrar a seção e a **Vercel como hospedagem principal atual**. Referências históricas ao GitHub Pages mantidas como registro da hospedagem anterior.
+
+**Estado atual:** V2.7.3.pro.4.

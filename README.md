@@ -235,12 +235,27 @@ O projeto busca seguir boas práticas alinhadas à **WCAG 2.2**, mas não é apr
 
 ## Publicação
 
-O site é publicado através do **GitHub Pages**.
+A hospedagem principal atual é a **Vercel**:
 
-- Branch: `main`
-- Diretório de publicação: `/ (root)`
-- Deploy pelo GitHub Pages
-- Site estático em HTML, CSS e JavaScript
+- Site: https://paulojeffersonx.vercel.app/
+- Site estático em HTML, CSS e JavaScript, sem bundler necessário para o formulário.
+- GitHub usado para versionamento; as referências ao GitHub Pages no histórico descrevem a hospedagem anterior.
+
+## Opiniões dos visitantes
+
+A seção **09 // SUA OPINIÃO** fica depois de Contato e antes das pistas e do rodapé. O visitante pode informar seu nome (opcional) e enviar uma opinião ou sugestão obrigatória de até **1.000 caracteres**.
+
+O envio usa **Formspree Vanilla JS (AJAX) via CDN**, sem dependências instaladas no projeto. As opiniões são recebidas por e-mail de forma privada e não são publicadas no site. O recebimento real foi testado e confirmado pelo responsável pelo portfólio.
+
+- Estado de envio, confirmação de sucesso e mensagens de erro em português.
+- Campos limpos somente após sucesso; texto preservado em caso de falha.
+- Layout compacto em desktop e celular, com temas claro e escuro.
+- Rótulos, mensagens com `aria-live`, foco visível e navegação por teclado.
+- Eventos de teclado nos campos isolados do detector global do Konami Code.
+- CSS em `css/11-opinion.css` e comportamento em `opinion.js`.
+- Nenhum e-mail destinatário ou token privado incluído no novo formulário.
+
+A versão permanece **V2.7.3.pro.4**, com o AEGIS Game Mode preservado.
 
 ---
 
