@@ -507,7 +507,7 @@ O que mudou:
 - Na Electrolux e na Pingon, voltei a usar os cargos reais — **Almoxarife I** e **Assistente de Compras** — em vez de tentar puxar essas experiências para TI.
 - Reescrevi os projetos contando mais o que eu montei, uso, testei e aprendi. Isso vale para o Private Cloud, automação em PowerShell, Fedora, Windows, Local AI, Batocera e AEGIS.
 - Cortei parte das frases promocionais, slogans e textos que pareciam estar tentando “vender” demais o portfólio.
-- O AEGIS continua no projeto com os números atuais de **22 Tools e 96 Skills**, mas sem transformar isso no centro da apresentação.
+- O AEGIS continuou no projeto com os números então atuais de **22 Tools e 96 Skills**, mas sem transformar isso no centro da apresentação.
 - O que ainda está em estudo continua aparecendo como estudo ou roadmap. Não transformei tecnologia planejada em experiência profissional.
 - Atualizei a referência principal do site para `paulojeffersonx.vercel.app`.
 
@@ -552,3 +552,14 @@ Complemento da versão atual, sem alteração do número de versão nem do AEGIS
 - README atualizado para registrar a seção e a **Vercel como hospedagem principal atual**. Referências históricas ao GitHub Pages mantidas como registro da hospedagem anterior.
 
 **Estado atual:** V2.7.3.pro.4.
+
+---
+
+## V2.7.3.pro.4 — Atualização da apresentação e inventário do AEGIS
+
+- A apresentação atual passa a identificar o ambiente como **AEGIS // AI CORE**.
+- Registrado o estado **AEGIS // SYSTEM ONLINE** e a identificação `AEGIS-AGENT v0.21.1 (2026.9.7) · upstream 145c713f`.
+- AEGIS permanece apresentado como uma camada/personalização local baseada no Hermes Agent.
+- O estado atual do portfólio registra **20 Tools** e **72 Skills**.
+- As referências históricas de **22 Tools** e **96 Skills** foram preservadas nos registros das versões em que eram válidas.
+- Nenhuma alteração no banner do Hermes, imagem do portfólio, CSS, layout, responsividade, componentes ou animações.

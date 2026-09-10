@@ -76,13 +76,15 @@ O desenvolvimento também utiliza **AI-Assisted Development** como apoio para ge
 
 ---
 
-### AEGIS — Personal AI Environment
+### AEGIS — AI Core
 
-Implementação e personalização de um ambiente de IA baseado no **Hermes Agent**, integrado ao meu fluxo diário no Fedora.
+Camada de IA local personalizada sobre o **Hermes Agent**, integrada ao meu fluxo diário no Fedora.
 
 **Estado atual**
-- 22 Tools
-- 96 Skills
+- 20 Tools
+- 72 Skills
+- AEGIS // SYSTEM ONLINE
+- AEGIS-AGENT v0.21.1 (2026.9.7) · upstream 145c713f
 - Fedora
 - Python
 - Ollama
@@ -304,7 +306,7 @@ Esta revisão mexe principalmente na forma de contar o conteúdo do portfólio. 
 - cargos anteriores apresentados pelos cargos formais, sem transformar apoio informal em título profissional de TI;
 - projetos descritos pelo que foi montado, testado e usado na prática;
 - URL principal atualizada para a publicação na Vercel;
-- AEGIS mantido com 22 Tools e 96 Skills;
+- Naquela revisão, AEGIS foi mantido com 22 Tools e 96 Skills;
 - AEGIS Game Mode, Neon Breakout, Signal Dodge e pistas preservados.
 
 
