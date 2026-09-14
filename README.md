@@ -313,3 +313,23 @@ Esta revisão mexe principalmente na forma de contar o conteúdo do portfólio. 
 ## Revisão V2.7.3.pro.4
 
 Correção do AEGIS Game Mode no celular, evitando conflito com o menu mobile e ajustando a interface do jogo em telas menores. Também foram atualizados `robots.txt` e `sitemap.xml` para apontar para o domínio atual `paulojeffersonx.vercel.app`.
+
+
+---
+
+## Revisão V2.7.3.pro.4 — Apresentação da AEGIS e correção do menu móvel
+
+Atualização de 14/09/2026, registrada no commit `4f5052c`, mantendo a versão do portfólio e sua identidade visual.
+
+- A apresentação da AEGIS passou a explicar seu uso como assistente virtual baseada no **Hermes Agent**, personalizada e integrada ao meu ambiente Fedora.
+- O texto deixa mais claro o trabalho de personalização da experiência, organização, comportamento, skills, integrações e interface, sem apresentar a base como criada por mim do zero.
+- Os dados técnicos foram separados da apresentação pessoal: **AEGIS-AGENT v0.21.2 (2026.9.11)**, **25 tools**, **72 skills**, **Fedora Linux** e **Hermes Agent**.
+- O hash do upstream saiu da seção pública. Tooltips e textos de acessibilidade foram ajustados para usar “a AEGIS”.
+- No menu móvel, foi limitado o tamanho do painel ao espaço disponível no cabeçalho e bloqueado o deslocamento horizontal da página, preservando a animação lateral.
+- A correção foi verificada no Firefox em larguras equivalentes a **360, 390 e 430 px**, incluindo abertura do menu, navegação até a AEGIS e abertura e fechamento do Game Mode. Nesses testes, a página deixou de se deslocar lateralmente e o menu voltou a abrir dentro da tela após fechar o jogo.
+- A confirmação no navegador do celular permanece pendente; o sintoma específico relatado no aparelho não foi reproduzido integralmente na simulação.
+- Arquivos alterados nessa implementação: `index.html` e `css/10-mobile-menu.css`.
+
+**Referência atual da AEGIS:** os dados acima substituem, para consulta do estado atual, as referências anteriores a 20 tools e à versão v0.21.1. Os trechos anteriores foram preservados como registro.
+
+**Estado atual do portfólio:** V2.7.3.pro.4.
