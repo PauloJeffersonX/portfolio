@@ -4,7 +4,7 @@ Portfólio pessoal/profissional onde reúno minha experiência com **Suporte de 
 
 Trabalho com suporte técnico presencial no Rio de Janeiro e já passei de 880 atendimentos. Fora da rotina de chamados, mantenho laboratórios próprios para testar Linux, Windows, redes, Docker, automação e IA local.
 
-**Versão atual do portfólio: V2.7.3.pro.4**
+**Versão atual do portfólio: V2.7.3.pro.5.1**
 
 > O portfólio continua em desenvolvimento e vai mudando conforme eu termino novos projetos, aprendo coisas novas ou encontro uma forma melhor de apresentar o que já faço.
 
@@ -257,7 +257,7 @@ O envio usa **Formspree Vanilla JS (AJAX) via CDN**, sem dependências instalada
 - CSS em `css/11-opinion.css` e comportamento em `opinion.js`.
 - Nenhum e-mail destinatário ou token privado incluído no novo formulário.
 
-A versão permanece **V2.7.3.pro.4**, com o AEGIS Game Mode preservado.
+A versão atual é **V2.7.3.pro.5.1**, com o AEGIS Game Mode preservado.
 
 ---
 
@@ -269,7 +269,7 @@ O histórico detalhado das alterações está disponível no arquivo:
 
 `HISTORICO_ATUALIZACOES_PORTFOLIO.md`
 
-A **V2.7.3.pro.4** representa o estado atual do projeto. O visual e os recursos da V2.7.3 foram preservados, enquanto o CSS passou a ser organizado em arquivos menores por responsabilidade. O portfólio continua ativo e pode receber novos projetos, experiências, laboratórios e melhorias conforme fizer sentido.
+A **V2.7.3.pro.5.1** representa o estado atual do projeto. O visual e os recursos da V2.7.3 foram preservados, enquanto o CSS passou a ser organizado em arquivos menores por responsabilidade. O portfólio continua ativo e pode receber novos projetos, experiências, laboratórios e melhorias conforme fizer sentido.
 
 ---
 
@@ -333,3 +333,21 @@ Atualização de 14/09/2026, registrada no commit `4f5052c`, mantendo a versão 
 **Referência atual da AEGIS:** os dados acima substituem, para consulta do estado atual, as referências anteriores a 20 tools e à versão v0.21.1. Os trechos anteriores foram preservados como registro.
 
 **Estado atual do portfólio:** V2.7.3.pro.4.
+
+
+---
+
+## Revisão V2.7.3.pro.5.1 — Consolidação da AEGIS e do menu móvel
+
+Esta revisão reúne a atualização da apresentação da AEGIS, a correção do menu móvel e os registros de documentação realizados em 14/09/2026.
+
+- AEGIS apresentada como assistente virtual baseada no Hermes Agent, personalizada e integrada ao Fedora.
+- Dados de referência: **AEGIS-AGENT v0.21.2 (2026.9.11)**, **25 tools** e **72 skills**. Essa é a versão da assistente; a versão do portfólio é **V2.7.3.pro.5.1**.
+- Menu móvel com largura limitada ao cabeçalho e bloqueio de deslocamento horizontal, mantendo a animação lateral.
+- Verificação no Firefox em larguras equivalentes a 360, 390 e 430 px; confirmação no navegador do celular ainda pendente.
+- Referências de versão atual sincronizadas no README principal e na documentação do CSS, com registro no histórico de atualizações.
+- Entradas de versões anteriores preservadas como histórico.
+
+**Convenção de versionamento e commits:** usar a versão no nome do commit de cada revisão, seguindo a sequência `V2.7.3.pro.5.1`, `V2.7.3.pro.5.2`, `V2.7.3.pro.5.3` e assim por diante. Registrar as mudanças no README por acréscimo, atualizar as referências de estado atual e preservar os registros históricos.
+
+**Estado atual do portfólio:** V2.7.3.pro.5.1.

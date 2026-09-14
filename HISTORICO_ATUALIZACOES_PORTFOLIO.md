@@ -563,3 +563,20 @@ Complemento da versão atual, sem alteração do número de versão nem do AEGIS
 - O estado atual do portfólio registra **20 Tools** e **72 Skills**.
 - As referências históricas de **22 Tools** e **96 Skills** foram preservadas nos registros das versões em que eram válidas.
 - Nenhuma alteração no banner do Hermes, imagem do portfólio, CSS, layout, responsividade, componentes ou animações.
+
+
+---
+
+## V2.7.3.pro.5.1 — Apresentação da AEGIS e correção do menu móvel
+
+Revisão de 14/09/2026, consolidando as alterações de implementação do commit `4f5052c` e o registro no README do commit `10b690f`.
+
+- Apresentação da AEGIS em linguagem pessoal, identificando o Hermes Agent como base e explicando a personalização do ambiente Fedora.
+- Dados técnicos separados do texto principal: AEGIS-AGENT v0.21.2 (2026.9.11), 25 tools, 72 skills, Fedora Linux e Hermes Agent.
+- Removido o hash do upstream da seção pública; tooltips e textos de acessibilidade ajustados para “a AEGIS”.
+- Menu móvel limitado à largura disponível no cabeçalho e bloqueio de deslocamento horizontal da página, preservando a animação lateral.
+- Verificado no Firefox em larguras equivalentes a 360, 390 e 430 px, com navegação até a AEGIS e abertura e fechamento do Game Mode. A confirmação no navegador do celular permanece pendente.
+- README principal e documentação do CSS atualizados para a versão V2.7.3.pro.5.1, mantendo os registros históricos.
+- Convenção registrada no README: commits de revisão nomeados pela versão, com sequência V2.7.3.pro.5.2, V2.7.3.pro.5.3 e seguintes.
+
+**Estado atual:** V2.7.3.pro.5.1.
