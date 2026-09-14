@@ -580,3 +580,16 @@ Revisão de 14/09/2026, consolidando as alterações de implementação do commi
 - Convenção registrada no README: commits de revisão nomeados pela versão, com sequência V2.7.3.pro.5.2, V2.7.3.pro.5.3 e seguintes.
 
 **Estado atual:** V2.7.3.pro.5.1.
+
+
+---
+
+## V2.7.3.pro.5.2 — README com uma escrita mais natural
+
+- Reescrita aprovada da apresentação principal do README, com linguagem direta e pessoal.
+- Mantidos os projetos, detalhes dos equipamentos, laboratórios, contatos e identidade do rodapé.
+- Dados atuais da AEGIS apresentados no corpo principal: v0.21.2 (2026.9.11), 25 tools e 72 skills, com Hermes Agent como base e Fedora como ambiente.
+- Blocos históricos e diretrizes finais do README preservados integralmente.
+- Referências da versão atualizadas na documentação, sem mudanças na página, no CSS ou nos jogos.
+
+**Estado atual:** V2.7.3.pro.5.2.

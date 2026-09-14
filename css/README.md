@@ -1,4 +1,4 @@
-# Estrutura CSS — V2.7.3.pro.5.1
+# Estrutura CSS — V2.7.3.pro.5.2
 
 O `styles.css` da raiz é o ponto de entrada do portfólio e importa os módulos abaixo na ordem necessária para preservar a cascata original.
 
