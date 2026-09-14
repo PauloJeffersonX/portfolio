@@ -3,7 +3,13 @@
    com respiro das bordas e altura limitada à viewport. */
 
 @media (max-width: 900px) {
+  html,
+  body {
+    overflow-x: clip;
+  }
+
   .header-wrap nav {
+    max-width: calc(100% - 24px);
     top: 72px;
     right: 12px;
     width: min(86vw, 340px);
