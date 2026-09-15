@@ -333,3 +333,23 @@ Reescrevi a apresentação do README para explicar minha rotina e meus projetos 
 - Esta revisão é de documentação; a página, os estilos e os jogos continuam como estavam.
 
 **Estado atual do portfólio:** V2.7.3.pro.5.2.
+
+
+---
+
+## Revisão V2.7.3.pro.5.3 — Painel horizontal para Sua Opinião
+
+Atualização de 15/09/2026, registrada no commit `8e6773f`. Deixei o formulário da seção **09 // SUA OPINIÃO** mais largo e compacto, seguindo a identidade visual do portfólio.
+
+- No desktop, o painel usa duas colunas: aproximadamente 35% para o nome e o botão de envio e 65% para a mensagem.
+- Em telas de até 900 px, os campos voltam a uma coluna, na ordem nome, mensagem, contador e botão. Até 560 px, o botão ocupa toda a largura.
+- Acrescentei o cabeçalho “DEIXE SUA OPINIÃO” e a identificação “VIA FORMSPREE”, usando a fonte e as cores existentes, sem novas dependências.
+- A descrição passou a ser: “Se quiser deixar uma sugestão ou comentário sobre o portfólio, pode mandar por aqui. A mensagem é privada e não fica publicada no site.”
+- O formulário agora mostra um contador dinâmico de até 1.000 caracteres, atualizado durante a digitação e após a limpeza dos campos.
+- Preservei o endpoint, o método, as validações e as mensagens da integração Formspree, além dos rótulos, foco visível e avisos acessíveis.
+- Mantive os espaçamentos externos da seção, as outras seções, o rodapé e o Game Mode. A frase lateral sugerida ficou de fora.
+- Fiz backup dos três arquivos antes da alteração e conferi as cópias. As verificações estáticas de IDs, rótulos, limites e preservação da lógica de envio passaram.
+- O resultado visual foi aprovado após a implementação. Nesta revisão, não foram executados testes automatizados no navegador nem um novo envio real pelo Formspree.
+- Arquivos alterados na implementação: `index.html`, `css/11-opinion.css` e `opinion.js`.
+
+**Estado atual do portfólio:** V2.7.3.pro.5.3. As referências anteriores foram preservadas como histórico, conforme a diretriz de atualização por acréscimo.
