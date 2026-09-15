@@ -431,17 +431,21 @@
       <div class="section-heading">
         <p class="eyebrow">09 // SUA OPINIÃO</p>
         <h2 id="opinion-title">O que achou do portfólio?</h2>
-        <p class="opinion-intro" id="opinion-privacy">Uma sugestão ou comentário pode me ajudar a melhorar. Sua mensagem será enviada de forma privada pelo Formspree e não será publicada aqui.</p>
+        <p class="opinion-intro" id="opinion-privacy">Se quiser deixar uma sugestão ou comentário sobre o portfólio, pode mandar por aqui. A mensagem é privada e não fica publicada no site.</p>
       </div>
       <form id="opinion-form" action="https://formspree.io/f/mrpgrlnw" method="POST" aria-describedby="opinion-privacy">
-        <div class="opinion-field">
+        <div class="opinion-panel-heading">
+          <span class="opinion-panel-title"><span class="opinion-indicator" aria-hidden="true"></span>DEIXE SUA OPINIÃO</span>
+          <span class="opinion-provider">VIA FORMSPREE</span>
+        </div>
+        <div class="opinion-field opinion-name-field">
           <label for="opinion-name">Nome <span>(opcional)</span></label>
           <input id="opinion-name" name="name" type="text" autocomplete="name" maxlength="100">
         </div>
-        <div class="opinion-field">
+        <div class="opinion-field opinion-message-field">
           <label for="opinion-message">Opinião ou sugestão <span>(obrigatória)</span></label>
           <textarea id="opinion-message" name="message" rows="2" maxlength="1000" required aria-describedby="opinion-message-hint"></textarea>
-          <small id="opinion-message-hint">Até 1.000 caracteres.</small>
+          <small id="opinion-message-hint"><span id="opinion-count">0</span> / 1000 caracteres</small>
         </div>
         <button class="btn primary" type="submit">Enviar opinião</button>
         <p id="opinion-status" class="opinion-status" role="status" aria-live="polite" aria-atomic="true"></p>

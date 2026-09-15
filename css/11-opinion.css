@@ -3,8 +3,8 @@
 .opinion-section .section-heading { max-width: 760px; }
 .opinion-section .section-heading h2 { font-size: clamp(1.8rem, 4vw, 3rem); margin: 12px 0; }
 .opinion-section .opinion-intro { color: var(--muted); margin: 0; }
-.opinion-section form { width: 100%; max-width: 960px; margin-top: 14px; padding: 14px 20px; border: 1px solid var(--line); border-radius: 14px; background: var(--panel); }
-.opinion-section .opinion-field { display: grid; gap: 4px; margin-bottom: 10px; }
+.opinion-section form { width: 100%; max-width: 100%; display: grid; grid-template-columns: minmax(0, .35fr) minmax(0, .65fr); grid-template-areas: "heading heading" "name message" "submit message" "status status"; gap: 12px 24px; margin-top: 14px; padding: 14px 20px; border: 1px solid var(--line); border-radius: 14px; background: var(--panel); }
+.opinion-section .opinion-field { display: grid; gap: 4px; margin: 0; min-width: 0; align-content: start; }
 .opinion-section label { color: var(--text); font-weight: 600; }
 .opinion-section label span, .opinion-section small { color: var(--muted); font-size: .82rem; font-weight: 400; }
 .opinion-section input, .opinion-section textarea {
@@ -12,15 +12,28 @@
   padding: 8px 12px; border: 1px solid var(--line); border-radius: 8px;
   background: var(--bg); color: var(--text); font: inherit; font-size: 1rem; line-height: 1.6;
 }
-.opinion-section textarea { resize: vertical; min-height: 76px; }
+.opinion-section textarea { resize: vertical; min-height: 104px; }
 .opinion-section input { height: 44px; }
 .opinion-section :is(input, textarea, button):focus-visible { outline: 3px solid var(--cyan); outline-offset: 4px; }
-.opinion-section button { border: 0; cursor: pointer; font-family: inherit; min-height: 44px; padding: 9px 14px; font-size: .85rem; }
+.opinion-section button { grid-area: submit; justify-self: start; align-self: end; border: 0; cursor: pointer; font-family: inherit; min-height: 44px; padding: 9px 14px; font-size: .85rem; }
 .opinion-section button:disabled { cursor: wait; opacity: .7; transform: none; }
-.opinion-section .opinion-status { min-height: 1.6em; margin: 6px 0 0; color: var(--muted); overflow-wrap: anywhere; }
+.opinion-section .opinion-status { grid-area: status; min-height: 1.6em; margin: 0; color: var(--muted); overflow-wrap: anywhere; }
 .opinion-section .opinion-status[data-state="success"] { color: var(--cyan); }
 .opinion-section .opinion-status[data-state="error"] { color: #ffb4be; }
 html[data-theme="light"] .opinion-section .opinion-status[data-state="error"] { color: #a12036; }
+/* O DOM mantém a ordem nome, mensagem e envio para teclado e leitura. */
+.opinion-panel-heading { grid-area: heading; display: flex; align-items: center; flex-wrap: wrap; gap: 8px 16px; font: 600 .68rem/1.6 "JetBrains Mono", monospace; letter-spacing: .06em; }
+.opinion-panel-heading::after { content: ""; flex: 1; height: 1px; background: var(--line); }
+.opinion-panel-title { display: inline-flex; align-items: center; gap: 8px; color: var(--cyan); }
+.opinion-indicator { width: 7px; height: 7px; flex-shrink: 0; border-radius: 50%; background: currentColor; }
+.opinion-provider { order: 1; color: var(--muted); }
+.opinion-name-field { grid-area: name; }
+.opinion-message-field { grid-area: message; }
+.opinion-section #opinion-message-hint { text-align: right; }
+.opinion-section noscript { grid-column: 1 / -1; }
+@media (max-width: 900px) {
+  .opinion-section form { grid-template-columns: minmax(0, 1fr); grid-template-areas: "heading" "name" "message" "submit" "status"; }
+}
 @media (max-width: 560px) {
   .opinion-section form { padding: 12px 14px; }
   .opinion-section button { width: 100%; }

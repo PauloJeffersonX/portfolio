@@ -4,6 +4,14 @@
   if (!form) return;
   const fields = [...form.querySelectorAll('input, textarea')];
   const message = form.querySelector('textarea');
+  const count = document.getElementById('opinion-count');
+  const updateCount = () => {
+    if (count) count.textContent = String(message.value.length);
+  };
+  message.addEventListener('input', updateCount);
+  form.addEventListener('reset', () => queueMicrotask(updateCount));
+  window.addEventListener('pageshow', updateCount);
+  updateCount();
   const button = form.querySelector('button[type="submit"]');
   const status = document.getElementById('opinion-status');
   let ready = false;
