@@ -12,3 +12,20 @@
 .secondary-text{color:#aab8bf}.secondary-card{border-style:dashed;background:rgba(10,14,18,.48)}
 @media(max-width:820px){.roadmap-focus,.devops-path-head{grid-template-columns:1fr}.focus-side{border-left:0;border-top:1px solid rgba(255,255,255,.08);padding:18px 0 0}.bubble-row{gap:8px}.bubble{font-size:.58rem}.path-bubbles{gap:7px}.path-node{font-size:.61rem}}
 
+
+/* Light mode: mantém as cores de status e os fundos escuros das etapas. */
+html[data-theme="light"] .subsection-label,
+html[data-theme="light"] .roadmap-legend,
+html[data-theme="light"] .bubble-soft,
+html[data-theme="light"] .focus-side small { color: var(--muted); }
+html[data-theme="light"] .bubble-hot,
+html[data-theme="light"] .focus-side .mini-kicker { color: #856300; }
+html[data-theme="light"] .bubble-active,
+html[data-theme="light"] .path-node.current,
+html[data-theme="light"] .path-node.current b { color: var(--cyan2); }
+html[data-theme="light"] .focus-side strong { color: var(--text); }
+html[data-theme="light"] .bubble-soft,
+html[data-theme="light"] .roadmap-section { border-color: rgba(15,45,58,.18); }
+html[data-theme="light"] .bubble-active,
+html[data-theme="light"] .path-node.current { border-color: rgba(0,127,157,.32); }
+html[data-theme="light"] .bubble-hot { border-color: rgba(133,99,0,.32); }

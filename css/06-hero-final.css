@@ -195,3 +195,9 @@ html[data-theme="light"] .signal-line small,html[data-theme="light"] .signal-sta
   #sobre.section{padding-top:72px}
 }
 
+
+/* Light mode: metadados do painel lateral do hero. */
+html[data-theme="light"] .signal-line > span { color: var(--cyan2); }
+html[data-theme="light"] .signal-line small,
+html[data-theme="light"] .signal-status { color: var(--muted); }
+html[data-theme="light"] .signal-line { border-color: rgba(15,45,58,.18); }

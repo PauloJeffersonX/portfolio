@@ -76,3 +76,7 @@ html[data-theme="light"] .portfolio-footer{background:linear-gradient(180deg,rgb
 @media(max-width:560px){#sobre.section{padding-top:50px}}
 
 
+
+/* Light mode: leitura do texto secundário sem transparência adicional. */
+html[data-theme="light"] .footer-tagline,
+html[data-theme="light"] .portfolio-footer .footer-a11y { opacity: 1; }

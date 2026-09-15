@@ -28,3 +28,20 @@ html[data-theme="light"] .ai-lab-focus b{color:#15313d}
 @media(max-width:760px){.aegis-capabilities,.ai-lab-focus{grid-template-columns:1fr}.aegis-flow{font-size:.57rem}}
 
 
+
+/* Light mode: negritos, indicadores e fluxos técnicos. */
+html[data-theme="light"] .aegis-copy > p strong { color: var(--text); }
+html[data-theme="light"] .aegis-stats strong,
+html[data-theme="light"] .aegis-capabilities b,
+html[data-theme="light"] .ai-lab-focus article > span { color: var(--cyan2); }
+html[data-theme="light"] .aegis-flow span,
+html[data-theme="light"] .infra-flow span { color: #405964; }
+html[data-theme="light"] .aegis-flow i,
+html[data-theme="light"] .infra-flow i { color: var(--cyan2); opacity: 1; }
+html[data-theme="light"] .aegis-flow,
+html[data-theme="light"] .infra-flow,
+html[data-theme="light"] .aegis-stats div { border-color: rgba(0,127,157,.32); }
+html[data-theme="light"] .aegis-capabilities div,
+html[data-theme="light"] .ai-lab-focus article { border-color: rgba(15,45,58,.18); }
+html[data-theme="light"] .aegis-stats [data-tooltip]:hover,
+html[data-theme="light"] .aegis-stats [data-tooltip]:focus-visible { border-left-color: var(--cyan2); }

@@ -72,3 +72,28 @@ html[data-theme="light"] .roadmap-expand-content{border-top-color:rgba(15,45,58,
 @media(max-width:700px){.roadmap-toggle{grid-template-columns:1fr auto;gap:8px 14px;padding:15px 16px}.roadmap-toggle-meta{grid-column:1;font-size:.58rem}.roadmap-toggle-title{grid-column:1;font-size:.96rem;white-space:normal}.roadmap-toggle-icon{grid-column:2;grid-row:1/3}.roadmap-expand-content{padding:2px 16px 19px}.roadmap-accordion-group{margin-top:28px}}
 @media(prefers-reduced-motion:reduce){.roadmap-expand,.roadmap-toggle-icon{transition:none!important}}
 
+
+/* Light mode: contraste dos accordions fechados, abertos e interativos. */
+html[data-theme="light"] #cases .case-card.project-accordion-ready,
+html[data-theme="light"] .roadmap-item,
+html[data-theme="light"] .project-expand-content,
+html[data-theme="light"] .roadmap-expand-content,
+html[data-theme="light"] .roadmap-expand-content .focus-side { border-color: rgba(15,45,58,.18); }
+html[data-theme="light"] .roadmap-toggle-meta,
+html[data-theme="light"] .project-toggle-icon,
+html[data-theme="light"] .roadmap-toggle-icon { color: var(--cyan2); }
+html[data-theme="light"] .roadmap-item.priority .roadmap-toggle-meta { color: #856300; }
+html[data-theme="light"] .roadmap-item.secondary .roadmap-toggle-meta { color: #7050ad; }
+html[data-theme="light"] .roadmap-item.future .roadmap-toggle-meta { color: var(--muted); }
+html[data-theme="light"] .project-toggle-icon,
+html[data-theme="light"] .roadmap-toggle-icon { border-color: rgba(0,127,157,.32); }
+html[data-theme="light"] .project-toggle:hover .project-toggle-title,
+html[data-theme="light"] .project-toggle:focus-visible .project-toggle-title,
+html[data-theme="light"] .roadmap-toggle:hover .roadmap-toggle-title,
+html[data-theme="light"] .roadmap-toggle:focus-visible .roadmap-toggle-title { color: var(--cyan2); }
+html[data-theme="light"] .project-toggle:focus-visible,
+html[data-theme="light"] .roadmap-toggle:focus-visible { outline-color: var(--cyan2); }
+@media (hover:hover) and (pointer:fine) {
+  html[data-theme="light"] #cases .case-card.project-accordion-ready:not(.is-open):hover,
+  html[data-theme="light"] .roadmap-item:not(.is-open):hover { border-color: rgba(0,127,157,.32); }
+}

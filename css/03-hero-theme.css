@@ -67,3 +67,28 @@ html[data-theme="light"] footer{color:#627984}
 html[data-theme="light"] .terminal-footer{background:rgba(0,0,0,.08)}
 @media(max-width:680px){.terminal-simple{min-height:0}.terminal-premium .terminal-simple pre{padding:26px 20px 22px;font-size:.78rem;line-height:1.75}.terminal-footer{padding:13px 16px}.terminal-footer span{font-size:.54rem}}
 
+
+/* Light mode: contraste dos textos auxiliares, sem alterar os tokens. */
+html[data-theme="light"] #cases .tag-row > span,
+html[data-theme="light"] #aegis .tag-row > span,
+html[data-theme="light"] .lab-section .tag-row > span,
+html[data-theme="light"] #roadmap .tag-row > span { color: #405964; border-color: rgba(15,45,58,.18); }
+html[data-theme="light"] #cases .case-result span { color: var(--muted); }
+html[data-theme="light"] .metric-card small,
+html[data-theme="light"] .hero-quote small,
+html[data-theme="light"] .company { color: var(--muted) !important; }
+html[data-theme="light"] #cases .case-no,
+html[data-theme="light"] #cases .case-result b,
+html[data-theme="light"] .project-metrics b,
+html[data-theme="light"] .hero-quote strong { color: var(--cyan2); }
+html[data-theme="light"] #cases .case-result,
+html[data-theme="light"] .project-metrics span,
+html[data-theme="light"] .metric-card,
+html[data-theme="light"] .hero-quote.section > div { border-color: rgba(15,45,58,.18); }
+
+/* Light mode: destaques do Sobre e navegação ativa sobre fundo claro. */
+html[data-theme="light"] #sobre .body-copy strong { color: var(--text); }
+@media (min-width: 901px) {
+  html[data-theme="light"] .header-wrap nav a.active,
+  html[data-theme="light"] .header-wrap nav a.active .nav-ico { color: var(--cyan2); }
+}
