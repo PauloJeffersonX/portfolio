@@ -593,3 +593,13 @@ Revisão de 14/09/2026, consolidando as alterações de implementação do commi
 - Referências da versão atualizadas na documentação, sem mudanças na página, no CSS ou nos jogos.
 
 **Estado atual:** V2.7.3.pro.5.2.
+
+
+---
+
+## Atualização de atendimentos — 17/09/2026
+
+- Total atualizado para mais de **940 chamados atendidos** nos destaques, no contador de experiência e no texto profissional do site.
+- Abertura da seção Sobre e do README atualizada para: “Já são mais de 940 chamados atendidos, e a conta continua subindo.”
+- Registros anteriores preservados como histórico.
+- Texto da experiência profissional reescrito com linguagem direta e pessoal, incluindo infraestrutura e redes, conforme aprovação.

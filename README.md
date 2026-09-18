@@ -12,7 +12,7 @@ No trabalho, lido com usuários, equipamentos e problemas que precisam ser resol
 
 Minha experiência está principalmente no suporte técnico presencial, em ambientes corporativos e de varejo. Trabalho com diagnóstico de hardware e software, manutenção, Windows, Linux, redes, impressoras, PDVs e periféricos.
 
-Já passei de **880 chamados atendidos**. Cada atendimento exige entender o problema, testar as possibilidades e conferir se o equipamento ou serviço voltou a funcionar dentro do procedimento do cliente.
+Já são mais de **940 chamados atendidos**, e a conta continua subindo. Cada atendimento exige entender o problema, testar as possibilidades e conferir se o equipamento ou serviço voltou a funcionar dentro do procedimento do cliente.
 
 Em casa, uso meus laboratórios para estudar e experimentar com mais calma. Pesquiso, configuro, testo e, quando alguma coisa dá errado, tento entender o motivo. Também documento o que funcionou para conseguir consultar depois.
 
