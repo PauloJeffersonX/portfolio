@@ -4,7 +4,7 @@ Sou Paulo Jefferson da Silva, do Rio de Janeiro, formado em **Análise e Desenvo
 
 No trabalho, lido com usuários, equipamentos e problemas que precisam ser resolvidos no local. Fora dele, continuo mexendo com Linux, infraestrutura, automação e IA. Às vezes para resolver alguma necessidade minha; outras vezes porque quero entender como alguma coisa funciona.
 
-**Versão atual do portfólio: V2.7.3.pro.5.2**
+**Versão atual do portfólio: V2.7.4.pro**
 
 **Site:** [paulojeffersonx.vercel.app](https://paulojeffersonx.vercel.app/)
 
@@ -12,7 +12,7 @@ No trabalho, lido com usuários, equipamentos e problemas que precisam ser resol
 
 Minha experiência está principalmente no suporte técnico presencial, em ambientes corporativos e de varejo. Trabalho com diagnóstico de hardware e software, manutenção, Windows, Linux, redes, impressoras, PDVs e periféricos.
 
-Já são mais de **940 chamados atendidos**, e a conta continua subindo. Cada atendimento exige entender o problema, testar as possibilidades e conferir se o equipamento ou serviço voltou a funcionar dentro do procedimento do cliente.
+Já são **1.050 chamados atendidos** em atividades de suporte técnico e Field Service, considerando diferentes clientes e operações. Desse total, mais de **700 atendimentos foram realizados na operação da Cencosud/Prezunic** (via FindUP), além de atendimentos por meio da Positivo S+. Cada chamado exige entender o problema, testar as possíveis causas e buscar uma solução, seguindo os procedimentos de cada cliente.
 
 Em casa, uso meus laboratórios para estudar e experimentar com mais calma. Pesquiso, configuro, testo e, quando alguma coisa dá errado, tento entender o motivo. Também documento o que funcionou para conseguir consultar depois.
 
@@ -353,3 +353,15 @@ Atualização de 15/09/2026, registrada no commit `8e6773f`. Deixei o formulári
 - Arquivos alterados na implementação: `index.html`, `css/11-opinion.css` e `opinion.js`.
 
 **Estado atual do portfólio:** V2.7.3.pro.5.3. As referências anteriores foram preservadas como histórico, conforme a diretriz de atualização por acréscimo.
+
+---
+
+## Revisão V2.7.4.pro — Atualização de métricas e experiência profissional (1.050+ chamados)
+
+- Atualização do resumo técnico no Hero para `1.050+ chamados • troubleshooting • SLA`.
+- Atualização do contador numérico de experiência (`data-count="1050"`).
+- Atualização da seção **Sobre** e do **README** com o marco de **1.050 chamados atendidos** em suporte técnico e Field Service, destacando mais de **700 atendimentos na operação Cencosud/Prezunic** (via FindUP) e atuação via **Positivo S+**.
+- Expansão e detalhamento do primeiro item da timeline em **Experiência Profissional** (`SET/2024 — ATUAL`), mantendo intactos o visual, CSS, animações, Game Mode, AEGIS, projetos e formulário Formspree.
+- Registros históricos anteriores preservados integralmente.
+
+**Estado atual do portfólio:** V2.7.4.pro.

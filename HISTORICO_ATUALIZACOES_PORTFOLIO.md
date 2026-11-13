@@ -603,3 +603,15 @@ Revisão de 14/09/2026, consolidando as alterações de implementação do commi
 - Abertura da seção Sobre e do README atualizada para: “Já são mais de 940 chamados atendidos, e a conta continua subindo.”
 - Registros anteriores preservados como histórico.
 - Texto da experiência profissional reescrito com linguagem direta e pessoal, incluindo infraestrutura e redes, conforme aprovação.
+
+---
+
+## V2.7.4.pro — Atualização de atendimentos (1.050+ chamados) e experiência profissional
+
+- Atualização do resumo técnico no início da página para `1.050+ chamados • troubleshooting • SLA`.
+- Atualização do indicador numérico de experiência (`data-count="1050"`).
+- Atualização do texto da seção **Sobre** para refletir **1.050 chamados atendidos** em suporte técnico e Field Service, com destaque para mais de **700 atendimentos na operação da Cencosud/Prezunic**.
+- Reestruturação do item atual da timeline em **Experiência Profissional** (`SET/2024 — ATUAL`), detalhando os atendimentos em campo (varejo e corporativo) por meio da **FindUP** e **Positivo S+**, com separação clara entre o volume da operação Cencosud/Prezunic (700+) e o total acumulado na trajetória (1.050+).
+- Atualização do `README.md` para a versão **V2.7.4.pro**, preservando integralmente o histórico anterior, a identidade visual, os estilos CSS, os scripts JS, o Game Mode, a seção da AEGIS, os projetos e o formulário Formspree.
+
+**Estado atual:** V2.7.4.pro.
